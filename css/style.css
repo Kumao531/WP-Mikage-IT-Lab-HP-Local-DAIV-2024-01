@@ -1,0 +1,4460 @@
+.viewport-test {
+  display: grid;
+  grid-template-columns: 0.5fr 6fr 20fr 6fr 0.5fr;
+  grid-template-rows: 24px;
+  height: 20px;
+  width: 100%;
+  background-color: #3f3f0f;
+}
+.ResponsiveSP {
+  color: #efe4e4;
+  display: block;
+}
+.ResponsiveTB {
+  color: #efe4e4;
+  display: none;
+}
+.ResponsivePC {
+  color: #efe4e4;
+  display: none;
+}
+.WP-Logo {
+  display: flex;
+  flex-wrap: nowrap;
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.Responsive-Message {
+  grid-column: 4;
+  grid-row: 1;
+  margin: 0;
+  padding: 4px 0 0 0;
+  align-items: center;
+  color: #efe4e4;
+}
+.WP-Logo .WPTrademark {
+  width : 98px;
+  height: 32px;
+  margin: -2px 0 0 0;
+  padding: 0;
+  overflow: hidden;
+}
+.WP-Logo .WPTrademark img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.powered-by {
+  color: #efe4e4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0  auto;
+  background-color: rgba(105, 175, 255, 0.20);
+}
+
+span {
+  white-space: nowrap;
+}
+
+/* コンテナーの最大サイズ */
+.container{
+  max-width: 1400px;
+  margin: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* ========================== */
+/* カラー定義
+/* ========================== */
+
+/* 標準の文字色 */
+.std-tx-color {
+  color: #181818;
+}
+
+header {
+  position: relative;
+  z-index: 99;
+}
+header, footer {
+/*  background-color: #181818; */
+  background-color: #181818;
+}
+
+.text-blue {
+  color: #3a02e1;
+}
+
+.text-yellow {
+  color: #b8a904;
+}
+
+.text-red {
+  color: #b40000;
+}
+
+/* ========================== */
+/* フォント書体定義
+/* ========================== */
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.noto-sans-jp-<uniquifier> {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.noto-serif-jp-<uniquifier> {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* メインビジュアルの主メッセージ */
+.vm-main-message-fig {
+  font-family: "Noto Sans JPRobot";
+}
+/* メインビジュアルの服メッセージ */
+.vm-sub-message-fig {
+  font-family: "Noto Serif JP";
+}
+
+.regular-sans {
+  font-style: "Noto Sans JP";
+}
+
+.regular-serif {
+  font-style: "Noto Serif JP";
+}
+
+.regular-Eng {
+  font-style: Arial;
+}
+
+/* ========================== */
+/* フォント定義
+/* ========================== */
+
+h2 {
+  font-family: "Noto Sans JP";
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: 3.0px;
+  color: #181818;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+h3 {
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 2.4px;
+  color: #181818;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+h4 {
+  font-family: "Noto Sans JP";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: 2.2px;
+  color: #181818;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+h5 {
+  font-family: "Noto Sans JP";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 1.8px;
+  color: #181818;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+.regtext {
+  font-family: "Noto Serif JP";
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 30px;
+  letter-spacing: 2.4px;
+  color: #181818;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+.regtext-small {
+  font-family: "Noto Serif JP";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  letter-spacing: 1.4px;
+  color: #181818;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+/* ========================== */
+/* フォント装飾/装飾定義
+/* ========================== */
+/* シャドーをつける */
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* 強調体 */
+.emphasis {
+  font-weight: 900;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* ========================== */
+/* コンテナー定義/構造の定義
+/* ========================== */
+
+/* セクション区切りの上下空白 */
+.section-padding{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.p-nowrap {
+  display: inline-block;
+}
+
+/* -------------------------------------------- */
+/*  ▼ スマフォの場合に適用するCSS ▼
+/* -------------------------------------------- */
+/*+ ===================================== +*/
+/*+ body部
+/** ===================================== +*/
+body {
+  background-color: #f8f5ff;
+}
+
+/*+ ===================================== +*/
+/*+ header部
+/** ===================================== +*/
+
+/* ヘッダー全体の領域の定義 */
+/* ヘッダー全体の領域の定義 */
+header {
+  display: block;
+  height: 160px;
+  width: 100%;
+}
+.header-serv-sub,
+.header-inq {
+  height: 96px;
+}
+
+/* ヘッダーのトレードマークの定義 */
+.trade-mark {
+  display: flex;
+  position: relative;
+  top: 80px;
+  left: 24px;
+  width: 208px;
+  height: 64px;
+/*  background-color: orange;*/
+}
+.trade-mark-serv-sub,
+.trade-mark-inq {
+  top: 16px;
+}
+.LogoMark {
+  display: block;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 64px;
+  height: 64px;
+  margin: 0;
+/*  background-color: #62f56c;*/
+}
+.LogoMark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.LogoText {
+  display: block;
+  position: relative;
+  height: 24px;
+  margin-top: 35px;
+  padding-left: 0 0 0 2px;
+/*  background-color: #fe6464;*/
+}
+.LogoTextFig {
+  font-family: "Noto Sans HK";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 2.4px;
+  color: #c9c9c9;
+}
+
+/******************************/
+/* スマフォ用ナビゲーション画面
+/******************************/
+/*** PC用メニュー ***/
+.header-nav,
+.header-nav-serv-sub,
+.header-nav-inq,
+.header-nav-show {
+  display: none;
+}
+
+/*** スマフォ用メニュー ***/
+/*** ハンバーガーボタン ***/
+.hamburger-menu, .hamburger-menu-serv-sub, .hamburger-menu-inq, .hamburger-menu-show {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.hamburger-menu .menu-toggle,
+.hamburger-menu-serv-sub .menu-toggle-serv-sub,
+.hamburger-menu-inq .menu-toggle-inq,
+.hamburger-menu-show .menu-toggle-show {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 8px;
+  width: 56px;
+  height: 56px;
+  opacity: 0.75;
+}
+.hamburger-menu .menu-toggle img,
+.hamburger-menu-serv-sub .menu-toggle-serv-sub img,
+.hamburger-menu-inq .menu-toggle-inq img,
+.hamburger-menu-show .menu-toggle-show img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*** メニュー画面 ***/
+.hamburger-menu .menu,
+.hamburger-menu-serv-sub .menu-serv-sub,
+.hamburger-menu-inq .menu-inq,
+.hamburger-menu-show .menu-show {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1000px;
+/*  background-color: #caf84e;*/
+  background-color: #181818;
+  overflow: nowrap;
+}
+.hamburger-menu .menu.show,
+.hamburger-menu-serv-sub .menu-serv-sub.show,
+.hamburger-menu-inq .menu-inq.show,
+.hamburger-menu-show .menu-show.show {
+  display: block;
+}
+/*** 閉じるボタン ***/
+.hamburger-menu .menu .close-button,
+.hamburger-menu-serv-sub .menu-serv-sub .close-button-serv-sub,
+.hamburger-menu-inq .menu-inq .close-button-inq,
+.hamburger-menu-show .menu-show .close-button-show {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 8px;
+  width: 56px;
+  height: 56px;
+  opacity: 1.00;
+}
+.hamburger-menu .menu .close-button img,
+.hamburger-menu-serv-sub .menu-serv-sub .close-button-serv-sub img,
+.hamburger-menu-inq .menu-inq .close-button-inq img,
+.hamburger-menu-show .menu-show .close-button-show img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/*** ナビゲーション ***/
+.hamburger-menu .menu .header-nav-sp,
+.hamburger-menu-serv-sub .menu-serv-sub .header-nav-sp,
+.hamburger-menu-inq .menu-inq .header-nav-sp,
+.hamburger-menu-show .menu-show .header-nav-sp {
+  display: block;
+  position: relative;
+  width: 180px;
+  top: 100px;
+  margin: 0 auto;
+/*  background-color: #3df29e;*/
+}
+.header-nav-sp h3 {
+  font-style: "Noto Sans JP";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 2.4px;
+  color: #E7E6F3;
+  text-align: left;
+}
+.header-nav-sp nav {
+  padding: 0;
+  margin: 40px 0 0 20px;
+}
+.header-nav-sp nav ul {
+  list-style-type: none;
+}
+.header-nav-sp nav ul li {
+  font-style: "Noto Sans JP";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1.8px;
+  margin-left: -24px;
+  margin-bottom: 24px;
+}
+.header-nav-sp nav ul li a {
+  text-decoration: none;
+  color: #7241FE;
+  display: block;
+  padding: 5px 10px;
+}
+
+/*+ until here about header ============= +*/
+
+/*+ ===================================== +*/
+/*+ footer部
+/** ===================================== +*/
+
+/* フッターのサイズ・文字色 */
+.footer-title {
+  font-style: "Noto Serif JP";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+  color: #E7E6F3;
+  text-align: left;
+}
+.footer-text {
+  font-style: "Noto Serif JP";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 1.6px;
+  color: #8A8A8A;
+}
+
+/* フッターの構造 */
+.footer {
+  width: 100%;
+  margin: 0 auto;
+/*  background-color: #cfb8b8;*/
+}
+
+.footer-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 328px 1fr;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 32px;
+  width: 100%;
+  margin: 32px auto 0;
+  padding: 0 16px;
+}
+
+.footer-nav {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.footer-address {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.footer-telmail {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.footer-business-hours {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.footer-text {
+  margin-top: 16px;
+  margin-left: 40px;
+}
+
+/* ナビゲーション */
+.footer-serv-sub {
+  display: block;
+  width: 100%;
+  height: 160px;
+  margin: 0 auto;
+}
+.footer-nav-serv-sub {
+  display: block;
+  position: relative;
+  width: 144px;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+.footer-nav nav {
+  margin-top: 24px;
+  margin-left: 40px;
+}
+.footer-nav-serv-sub nav {
+  margin-top: 8px;
+  margin-left: 40px;
+}
+.footer-nav nav ul,
+.footer-nav-serv-sub nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-nav nav ul li{
+  margin-bottom: 32px;
+  font-family: "Noto Sans HK";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 2.16px;
+}
+.footer-nav-serv-sub nav ul li {
+  margin-bottom: 8px;
+  font-family: "Noto Sans HK";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 2.16px;
+}
+.footer-nav nav ul li a,
+.footer-nav-serv-sub nav ul li a {
+  text-decoration: none;
+  color: #7241FE;
+  display: block;
+  padding: 5px 10px;
+}
+.footer-nav nav ul li a:hover,
+.footer-nav-serv-sub nav ul li a:hover {
+  color: #ecd525;
+}
+
+
+/* コピーライト */
+.footer-copyright {
+  display: flex;
+  width: 100%;
+  height: 68px;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.copyright-text {
+  font-style: "Noto Serif JP";
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0 16px 16px 0;
+  color: #FBF4F4;
+}
+
+/*+ until here about footer ============= +*/
+
+/*+ ===================================== +*/
+/*+ main部
+/** ===================================== +*/
+/*+ ===================================== +*/
+/*+ ビジュアルメイン部
+/** ===================================== +*/
+/* ビジュアルメイン画像 */
+.main-visual {
+/*  display: block;*/
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+/*  background-color: #ff9e9e;*/
+}
+
+.main-visula-fig {
+/*  margin: 0;*/
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+/*  background-color: #d3ff41;*/
+}
+
+.main-visula-fig img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* タイトル文字 */
+.main-visual-title-panel {
+  display: block;
+  width: 100%;
+  height: 328px;
+  margin: -384px auto 0;
+/*  background-color: #7A2972;*/
+}
+
+.main-visual-title-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  margin-top: 56px;
+}
+
+.main-visual-title span {
+  font-family: "Noto Sans JP";
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 40px;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+
+.main-visula-narration {
+  font-family: "Noto Serif JP";
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/*+ until here about main-visual ======== +*/
+
+/*+ main =============================== +*/
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-description {
+  width: 100%;
+  margin: 0 auto;
+  padding: 16px 24px 0;
+}
+
+
+/*+ until here about main =============== +*/
+
+
+/*+ ===================================== +*/
+/*+ 個別画面ごとの定義を行う
+/** ===================================== +*/
+
+/*+ ===================================== +*/
+/*+ 主記述部（top）
+/** ===================================== +*/
+
+/*+ ===================================== +*/
+/*+ 主記述部（index）
+/** ===================================== +*/
+/*+++ ビジュアルメイン +++*/
+.main-visual-title-figure-index span {
+  letter-spacing: 4.8px;
+  color: #242297;
+}
+
+.main-visula-narration-index {
+  line-height: 40px;
+  letter-spacing: 2.4px;
+  margin-top: 3px;
+  text-align: left;
+  color: #181818;
+}
+
+.declaration-index {
+  display: grid;
+  grid-template-columns: 1fr 240px 1fr;
+  grid-template-rows: 72px auto auto 72px auto auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title-1-index {
+  grid-column: 2;
+  grid-row: 1;
+/*  background-color: #f8bebe;*/
+}
+
+.what-company-index {
+  grid-column: 2;
+  grid-row: 2;
+/*  background-color: #bcf795;*/
+}
+
+.what-service-index {
+  grid-column: 2;
+  grid-row: 3;
+/*  background-color: #aa95f8*/
+}
+
+.title-2-index {
+  grid-column: 2;
+  grid-row: 4;
+/*  background-color: #f8bebe;*/
+}
+
+.principal-index {
+  grid-column: 2;
+  grid-row: 5;
+/*  background-color: #bcf795;*/
+}
+
+.motto {
+  grid-column: 2;
+  grid-row: 6;
+/*  background-color: #aa95f8;*/
+}
+
+/* 個別の構造 */
+.intro-index {
+  padding: 0 8px 16px 8px;
+}
+
+.title-area-index {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  height: 80px;
+  padding-bottom:54px;
+  margin: 0 auto;
+}
+.title-index {
+  display: block;
+  width: auto;
+  margin-right: 8px;
+}
+.title-index h3 {
+  width: auto;
+  text-align: left;
+  margin: 0;
+}
+.line-index {
+  height: 4px;
+  border-radius: 2px;
+  width: 300px;
+  background-color: #221EEB;
+}
+
+/* 各々の掲示 */
+.note-index {
+  margin-left: 12px;
+  list-style: none;
+}
+.note-index p {
+  color: #8d0202;
+  line-height: 22px;
+  letter-spacing: 2.0px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 0 24px;
+  margin-bottom: 24px;
+}
+
+.figure-index {
+  display: block;
+  width: 240px;
+  height: 540px;
+  margin: 0 auto;
+/*  background-color: #efff86;*/
+}
+
+.caption-index {
+  display: block;
+  width: 100%;
+  height: 64px;
+  padding: 8px 0;
+  margin: 0 auto;
+  background-color: #b5ffb5;
+}
+.caption-index p {
+  font-family: "Noto Sans JP";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing:2.2px;
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+}
+.hr-index {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 4px;
+  opacity: 0.5;
+}
+.hr-index img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.describe-index {
+  display: block;
+  width: 100%;
+  height: 264px;
+  margin: -12px 0;
+  padding: 0;
+/*  background-color: #cda4ff;*/
+}
+.describe-index ul {
+  margin: 0 12px 0 0;
+  padding-top: 48px;
+  height: 360px;
+/*  background-color: #9cfbc0;*/
+}
+.describe-index ul li {
+  font-family: "Noto Serif Jp";
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+/*BBB*/
+.figure-plate-index {
+  width: 100%;
+  height: 380px;
+  margin: 0;
+  box-shadow: 3px 3px 6px rgba( 0, 0, 0, 0.4 );
+}
+.figure-plate-index img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.textplate-index {
+  margin-top: -380px;
+}
+
+.figure-index a {
+  text-decoration: none;
+}
+
+.jamppage-index {
+  width: 100%;
+  padding-top: 100px;;
+}
+.jamp-fig-index {
+  width: 200px;
+  height: 48px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+.jamp-fig-index img {
+  width: 100%;
+  height: 100%;
+}
+.jamp-message-index {
+  width: 100%;
+  padding-left: 42px;
+  margin-top: -52px;
+}
+.jamp-message-index p {
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 1.6px;
+  color: #605601;
+  width: 100%;
+  text-align: center;
+}
+
+.principal-caption-index p {
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 2.4px;
+  text-align: center;
+  padding-top: 20px;
+}
+.principal-describe-index ul {
+  list-style-type: cjk-decimal;
+}
+.principal-describe-index ul li {
+  margin-left: 18px;
+  margin-top: 20px;
+}
+
+.motto-caption-index p {
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 2.4px;
+  text-align: center;
+  padding-top: 20px;
+}
+.motto-describe-index {
+  display: block;
+  width: 100%;
+  padding-top: 28px;
+}
+.motto-describe-index ul {
+  display: block;
+  width: 100%;
+  list-style-type: none;
+  margin-left: 0;
+}
+.motto-describe-index ul li {
+  margin-left: 16x;
+  padding-bottom: 16px;
+}
+
+/*+ ===================================== +*/
+/*+ 主記述部（company）
+/** ===================================== +*/
+
+/*+++ ビジュアルメイン +++*/
+.main-visual-title-area-company {
+  padding-top: 8px;;
+  row-gap: 4px;
+}
+
+.main-visual-title-figure-company span {
+  letter-spacing: 9px;
+  color: #DD3500;*
+}
+
+.main-visula-narration-company {
+  line-height: 40px;
+  letter-spacing: 1.6px;
+  color: #7A2972;
+}
+
+/*AAA*/
+/*+++ カルーセル構成 +++*/
+/* カルーセル図全対枠 */
+.curousel-box {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+.curousel-visual {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 100px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0;
+}
+.carousel {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* カルーセル背景図 */
+.curousel-plate {
+  display: block;
+  position: relative;
+  top: -100px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+.curousel-main-fig {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0;
+  opacity: 0.25;
+  overflow: hidden;
+}
+.curousel-main-fig img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* カルーセル添図 */
+.curousel-sub-fig {
+  display: relative;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: -272px 0 0 40px;
+  padding: 0;
+  overflow: hidden;
+  opacity: 1.0;
+  border: 0.2px solid rgba(52, 20, 25, 0.25);
+  text-shadow: 2px 2px 4px rgba(3, 0, 19, 0.75);
+}
+.curousel-sub-fig img {
+  width: 100%;
+  height: 100%;
+  object-fit: over;
+}
+/* カルーセルタイトル */
+.curousel-visual a {
+  text-decoration: none;
+}
+.surousel-descript {
+  font-style: "Noto Sans JP";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1.2px;
+  color: #1b0461;
+  text-shadow: 2px 2px 2px rgba(11, 1, 67, 0.5);
+  margin: 40px 0 0 40px;
+  padding: 0;
+}
+
+/*+++ 主記述部 +++*/
+/* 全体の構造 */
+.main-description-company {
+  margin-top: 24px;
+}
+
+.flexbox-right-company {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 48px 176px auto 48px;
+  grid-template-areas:
+      "TitleBox-comp"
+      "FigBox-comp"
+      "TextBox-comp"
+      "ReturnBox-comp";
+  margin-bottom: 16px;
+/*  background-color: #e8f290;*/
+}
+
+.flexbox-left-company {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 48px 176px auto 48px;
+  grid-template-areas:
+      "TitleBox-comp"
+      "FigBox-comp"
+      "TextBox-comp"
+      "ReturnBox-comp";
+/*  background-color: #e8f290;*/
+}
+
+.title-area-company {
+  display: flex;
+  grid-area: TitleBox-comp;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  height: 24px;
+  margin: 0 auto 24px;
+/*  background-color: #73ffa2;*/
+}
+
+.text-area-company {
+  display: block;
+  grid-area: TextBox-comp;
+  width: 100%;
+/*  background-color: #ff9f9f;*/
+}
+
+
+.figure-area-company {
+  display: block;
+  grid-area: FigBox-comp;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto auto auto;
+  object-fit: cover;
+/*  background-color: #a670f2;*/
+}
+.figure-area-company img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 2px 2px 4px rgba( 3, 3, 6, 0.25);
+}
+
+.return-top-company {
+  display: block;
+  grid-area: ReturnBox-comp;
+/*  background-color: #a63d3d;*/
+}
+
+/* 個別の構造 */
+.title-comp {
+  display: block;
+  width: auto;
+  margin-right: 8px;
+}
+.h3-comp {
+/*  height: 24px;*/
+  width: auto;
+  text-align: left;
+  margin: 0;
+}
+.line-comp {
+  height: 4px;
+  border-radius: 2px;
+  width: 300px;
+  background-color: #221EEB;
+}
+
+.return-top-company {
+  display: flex;
+  justify-content: flex-end;
+}
+.return-top-company span {
+  font-family: "Noto Sans JP";
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: 1.4px;
+  padding-right: 8px;
+  color: #221EE8;
+}
+.return-top-company span a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+
+.sub-text-comp {
+  padding-left: 24px;
+}
+
+/*+ ===================================== +*/
+/*+ 主記述部（service）
+/** ===================================== +*/
+
+/*+++ ビジュアルメイン +++*/
+.main-visual-title-area-service {
+  padding-top: 32px;;
+  row-gap: 4px;
+}
+
+.main-visual-title-figure-service span {
+  letter-spacing: 9px;
+  color: #4d25de;
+  text-shadow:
+    2px 2px 4px rgba( 255, 255, 255, 0.60),
+    -2px -2px 4px rgba( 255, 255, 255, 0.60),
+    -2px 2px 4px rgba( 255, 255, 255, 0.60),
+    2px -2px 4px rgba( 255, 255, 255, 0.60)
+}
+
+.main-visula-narration-service {
+  line-height: 40px;
+  letter-spacing: 1.6px;
+  color: #4d25de;
+  text-shadow:
+    2px 2px 4px rgba( 255, 255, 255, 0.70),
+    -2px -2px 4px rgba( 255, 255, 255, 0.70),
+    -2px 2px 4px rgba( 255, 255, 255, 0.70),
+    2px -2px 4px rgba( 255, 255, 255, 0.70)
+}
+
+/*+++ 主記述部 +++*/
+/* 全体の構造 */
+.abstract-service {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.display-bord-service {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 80px;
+  width: 100%;
+  margin: 64px auto;
+/*  background-color: #ff9a9a;*/
+}
+
+.web-service {
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+/*  background-color: hsl(60, 100%, 82%);*/
+}
+
+.si-service {
+  display: block;
+  grid-column: 1;
+  grid-row: 2;
+/*  background-color: hsl(60, 100%, 82%);*/
+}
+
+.pm-service {
+  display: block;
+  grid-column: 1;
+  grid-row: 3;
+/*  background-color: hsl(60, 100%, 82%);*/
+}
+
+.consul-service {
+  display: block;
+  grid-column: 1;
+  grid-row: 4;
+/*  background-color: hsl(60, 100%, 82%);*/
+}
+
+.plate-service {
+  width: 300px;
+  height: 185px;
+  margin: 0 auto;
+}
+.plate-service a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+/*  filter: drop-shadow( 2px 2px 4px rgba( 0, 0, 0, 0.40));*/
+}
+.plate-service a {
+  text-decoration: none;
+}
+
+.web-service p {
+  z-index: 52;
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 2.4px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: -112px;
+  padding-right: 32px;
+  text-shadow: -2px -2px 3px #c2b2b2, 2px 2px 3px #c2b2b2;
+}
+
+.si-service p {
+  z-index: 52;
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 2.4px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: -112px;
+  padding-right: 32px;
+  text-shadow: -1px -1px 1px #c2b2b2, 1px 1px 1px #c2b2b2;
+}
+
+.pm-service p {
+  z-index: 52;
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 36px;
+  letter-spacing: 2.4px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: -138px;
+  margin-left: -24px;
+  text-shadow: -2px -2px 3px #c2b2b2, 2px 2px 3px #c2b2b2;
+}
+
+.consul-service p {
+  z-index: 52;
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 36px;
+  letter-spacing: 2.4px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: -138px;
+  margin-left: -24px;
+  text-shadow: -2px -2px 3px #c2b2b2, 2px 2px 3px #c2b2b2;
+}
+
+/*+ ===================================== +*/
+/*+ 主記述部（aboutus）
+/** ===================================== +*/
+/*+++ ビジュアルメイン +++*/
+/*+++ ビジュアルメイン +++*/
+.main-visual-title-area-aboutus {
+  padding-top: 32px;;
+  row-gap: 4px;
+}
+
+.main-visual-title-figure-aboutus span {
+  letter-spacing: 4.8px;
+  color: #e8e8e8;
+}
+
+.main-visula-narration-aboutus {
+  line-height: 40px;
+  letter-spacing: 2.4px;
+  margin-top: 3px;
+  text-align: left;
+  color: #e8e8e8;
+}
+
+/*+++ 主記述部 +++*/
+/* 全体の構造 */
+.leading-aboutus h3 {
+  width: 100%;
+  padding: 0 0 16px 0;
+}
+.leading-aboutus p {
+  width: 100%;
+  padding: 0 0 32px 0;
+}
+
+.refarence-aboutus {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat( 5, auto );
+  grid-row-gap: 62px;
+  width: 100%;
+  margin:0 auto 32px auto;
+}
+
+.company-aboutus {
+  display: block;
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  margin: 0 auto;
+/*  background-color: #f7ff8b;*/
+}
+
+.office-aboutus {
+  display: block;
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  margin: 0 auto;
+/*  background-color: #f7ff8b;*/
+}
+
+.devenv-aboutus {
+  display: block;
+  grid-column: 1;
+  grid-row: 3;
+  width: 100%;
+  margin: 0 auto;
+/*  background-color: #f7ff8b;*/
+}
+
+.profile-aboutus {
+  display: block;
+  grid-column: 1;
+  grid-row: 4;
+  width: 100%;
+  margin: 0 auto;
+/*  background-color: #f7ff8b;*/
+}
+
+.motto-aboutus {
+  display: block;
+  grid-column: 1;
+  grid-row: 5;
+  width: 100%;
+  margin: 0 auto;
+/*  background-color: #f7ff8b;*/
+}
+
+.nodecoration-about {
+  text-decoration: none;
+}
+
+.reference-abotus{
+  position: relative;
+}
+
+.ref-fig-aboutus {
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 48px;
+  border: 1px solid rgba( 20, 20, 20, 0.15 );
+  filter: drop-shadow( 3px 3px 4px  rgba( 0, 0, 0, 0.40));
+  margin: 0 auto;
+}
+.ref-fig-aboutus img {
+  position:relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ref-fig-aboutus p {
+  position: relative;
+  font-family: "Noto Sans JP";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2.4px;
+  color: #282727;
+  margin-top: -41px;
+  margin-left: 16px;
+}
+
+.rademake-part-abotus h3 {
+  width: 100%;
+}
+
+.leading-aboutus p {
+  padding: 0 16px;
+  margin-bottom: 32px;
+}
+
+.trademake-part-abotus {
+  display: block;
+  width: 100%;
+  margin: 48px auto 0 auto;
+}
+
+.trademark-exp-aboutus {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 24px auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.trademark-aboutus {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  margin: 0 auto;
+/*  background-color: #81fd9c;*/
+}
+
+.caption-aboutus {
+  grid-column: 1;
+  grid-row: 3;
+  width: 100%;
+  margin: 0 auto;
+/*  background-color: #81fd9c;*/
+}
+.caption-aboutus p {
+  padding: 0 8px;
+}
+
+.trademark-aboutus div {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+}
+.trademark-aboutus div img {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid rgba( 20, 20, 20, 0.15 );
+  filter: drop-shadow( 3px 3px 4px  rgba( 0, 0, 0, 0.40));
+}
+
+/*+ ===================================== +*/
+/*+ 主記述部（inquiry）
+/** ===================================== +*/
+/*+++ ビジュアルメイン +++*/
+/* メインビジュアルを非表示 */
+.main-visual-inquiry {
+  display: none;
+}
+
+.main-visual-title-figure-inquiry span {
+  letter-spacing: 4.8px;
+  color: #242297;
+}
+
+.main-visula-narration-inquiry {
+  line-height: 40px;
+  letter-spacing: 2.4px;
+  margin-top: 3px;
+  text-align: left;
+  color: #181818;
+}
+
+/*+++ 主記述部 +++*/
+.main-description-inquiry {
+  margin-top: 24px;
+}
+
+.caution-inquery {
+  font-family: "Noto Sans Jp";
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 1.2px;
+  vertical-align: super;
+  color: #e61111;
+}
+
+.container-inquiry {
+  display: grid;
+  grid-template-columns: 0px 300px 1fr;
+  grid-template-rows: 36px 36px;
+  grid-row-gap: 4px;
+  margin: 0 0 24px 16px;
+}
+.child-label-inquiry {
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+  align-items: center;
+}
+.child-body-inquiry {
+  display: block;
+  grid-column: 2;
+  grid-row: 2;
+  align-items: center;
+}
+
+.container-02-inquiry {
+  display: grid;
+  grid-template-columns: 0px 300px 1fr;
+  grid-template-rows: 60px auto;
+  grid-row-gap: 4px;
+  margin: 0 0 24px 16px;
+}
+.child-label-02-inquiry {
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+  align-items: center;
+}
+.child-body-02-inquiry {
+  display: block;
+  grid-column: 2;
+  grid-row: 2;
+  align-items: flex-start;
+}
+
+.container-03-inquiry {
+  display: grid;
+  grid-template-columns: 0px 300px 1fr;
+  grid-template-rows: 36px auto;
+  grid-row-gap: 4px;
+  margin: 0 0 24px 16px;
+}
+.child-label-03-inquiry {
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+  align-items: center;
+}
+.child-body-03-inquiry {
+  display: block;
+  grid-column: 2;
+  grid-row: 2;
+  align-items: flex-start;
+}
+
+.label-inquiry,
+.label-02-inquiry {
+  padding-left: 8px;
+  border-bottom: 2px solid  rgba(16, 16, 16, 0.30);
+  background-color: rgb(252, 255, 58, 0.20);
+}
+.label-02-inquiry {
+  font-family: "Noto Serif JP";
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  letter-spacing: 1.6px;
+  padding: 0 8px;
+  align-content: center;
+  color: #181818;
+}
+.contact-textbox,
+.radiobox-inquiry,
+.select-inquiry {
+  padding-left: 8px;
+  height: 36px;
+  width: 300px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid rgba(16, 16, 16, 0.30);
+  background-color: rgba(108, 108, 108, 0.20);
+}
+
+.body-02-inquiry {
+  padding: 8px;
+  width: 300px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid rgba(16, 16, 16, 0.30);
+  background-color: rgba(108, 108, 108, 0.20);
+}
+.body-02-inquiry span {
+  white-space: nowrap;
+}
+.checkbox-inquiry {
+  display: flex;
+  flex-direction: column;
+}
+.flex-inquiry {
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap;
+}
+.flex-inquiry label {
+  padding: 8px 4px;
+}
+
+.sort-inquiry {
+  align-content: center;
+}
+.sp-query {
+  margin-top: -21px;
+}
+
+.textarea-inquiry textarea {
+  width: 99%;
+}
+
+#send-btn,
+#nosend-btn {
+  padding: 4px 8px;
+  margin-top: 32px;
+  margin-left: 12px;
+  margin-bottom: 48px;
+  width: 120px;
+  height: 40px;
+  overflow: hidden;
+}
+#send-btn input {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#nosend-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#send-btn {
+  display: none;
+}
+
+/*+ ===================================== +*/
+/*+ 主記述部（serviceの呼び出し子画面）
+/** ===================================== +*/
+.main-description-web {
+  padding-bottom: 32px;
+}
+
+.main-description-serv-sub {
+  padding-bottom: 24px;
+}
+
+.h2-serv-sub {
+  margin: 0;
+  padding-top: 16px;
+}
+
+.h3-serv-sub {
+  line-height: 30px;
+  margin: 0;
+  padding-top: 40px;
+  padding-left: 16px;
+  color: #32049f;
+}
+
+.h4-serv-sub {
+  line-height: 28px;
+  font-style: italic;
+  margin: 0;
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  color: #570202;
+}
+
+.h5-serv-sub {
+  line-height: 24px;
+  margin: 0;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 0;
+}
+
+.p-1-serv-sub {
+   margin: 0;
+  padding-top: 16px;
+  padding-left: 16px;
+}
+.p-2-serv-sub {
+  margin: 0;
+  padding-top: 8px;
+  padding-left: 16px;
+}
+.p-2-serv-notop-sub {
+  margin: 0;
+  padding-top: 0;
+  padding-left: 16px;
+}
+.p-3-serv-sub {
+  margin: 0;
+  padding-top: 8px;
+  padding-left: 16px;
+}
+
+.ul-0-serv-sub {
+  margin: 0;
+  padding-top: 8px;
+}
+.ul-0-serv-sub li {
+  margin-left: 0;
+  margin-bottom: 8px;
+}
+
+.ul-serv-sub {
+  margin: 0;
+  padding-top: 8px;
+}
+.ul-serv-sub li {
+  font-style: "Noto Serif JP";
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.6px;
+  margin-left:8px;
+  margin-bottom: 8px;
+  color: #181818;
+}
+
+/*+ ===================================== +*/
+/*+ 主記述部（aboutusの呼び出し子画面）
+/** ===================================== +*/
+
+.main-description-inq {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+/*** 色指定 ***/
+.border-1-inq {
+  background-color: #eb2796;
+}
+
+.back-1-inq {
+  background-color: #dee1fd;
+  border-radius: 10px;
+}
+
+.back-2-inq {
+  background-color: #fefbd1;
+  border-radius: 10px;
+}
+
+/*** inq-company-info ***/
+.line-container-company-info-inq {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text-company-info-inq {
+  margin-right: 10px;
+}
+.line-company-info-inq {
+  width: 200px;
+  height: 3px;
+  opacity: 0.50;
+}
+
+.company-info-container-inq {
+  display: grid;
+  grid-template-columns: 1fr 272px 1fr;
+  grid-template-rows: repeat( 2, auto );
+  grid-row-gap: 3px;
+  padding-bottom: 24px;
+}
+
+.company-info-head-inq {
+  grid-column: 2;
+  grid-row: 1;
+  margin: 0;
+  padding: 4px 8px;
+}
+
+.company-info-body-inq {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0;
+  padding: 4px 8px;
+}
+
+.map-inq {
+  display: grid;
+  position: relative;
+  grid-template-columns: 8px 1fr 24px;
+  grid-template-rows: 240px;
+  overflow: hidden;
+  margin-left: 24px;
+}
+.map-inq iframe {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*** inq-company-info ***/
+.header-h3-inq {
+  margin-top: 32px;
+}
+.header-h3-inq .text-company-info-inq h3 {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.company-info-inq p {
+  margin: 0;
+  padding-top: 16px;
+  line-height: 24px;
+  padding-bottom: 16px;
+}
+
+/*** inq-environ-info ***/
+.environ-info-inq {
+  margin: 16px 0 24px 0;
+  width: 320px;
+  overflow: hidden;
+}
+.environ-info-inq img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0.5px solid rgba( 64, 64, 64, 0.20 );
+}
+
+/*** inq-personal-info ***/
+.name-inq {
+  margin-top: 32px;
+  margin-left: 32px
+}
+.name-inq .name-kanji-inq {
+  font-family: "Noto Serif JP";
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+.name-inq .name-kana-inq {
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  line-height: 24px;
+  margin:  4px 0 0 2px;
+  padding: 0;
+}
+
+.container-personal-info-inq {
+  display: grid;
+  grid-template-columns: 1px 1fr 1px;
+  grid-template-rows: auto auto;
+  grid-row-gap: 16px;
+  margin: 24px auto 16px auto;
+}
+.figure-personal-info-inq {
+  grid-column: 2;
+  grid-row: 1;
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.figure-personal-info-inq img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0.5px solid rgba( 64, 64, 64, 0.20 );
+}
+.text-personal-info-inq {
+  grid-column: 2;
+  grid-row: 2;
+  margin: 0 auto;
+}
+.text-personal-info-inq p {
+
+}
+
+.text-personal-info-inq ul {
+  margin-left: -16px;
+}
+.text-personal-info-inq ul li {
+  line-height: 24px;
+  padding-bottom: 8px;
+}
+
+.career-info-inq p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 8px;
+}
+
+.one-career-info-inq {
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+.one-career-info-inq details summary {
+  font-style: "Noto Sans JP";
+  font-size: 16px;
+}
+.one-career-info-inq details figure {
+  width: 280px;
+  overflow: hidden;
+}
+.one-career-info-inq details figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.career-container-inq figure {
+  display: none;
+}
+.career-notes-sp {
+  display: block;
+}
+.career-notes-nonsp {
+  display: none;
+}
+
+.kosokoso-inq {
+  display: none;
+  margin: 16px 0 0 0;
+  line-height: 26px;
+}
+
+.show-carrer-inq {
+  padding: 0;
+  margin: 8px 0 0 32px;
+}
+.show-carrer-inq a {
+  font-family: "Noto Sans JP";
+  text-decoration: none;
+  font-weight: 600;
+  color: #1a02b9;
+}
+.show-carrer-inq a:hover {
+  text-decoration: none;
+  font-weight: 600;
+  color: #869c17;
+}
+
+.hobby-hanazono-fig-inq {
+  margin-left: 0;
+  width: 300px;
+  height: 80px;
+  overflow: hidden;
+}
+.hobby-hanazono-fig-inq img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*** inq-motto ***/
+.motto-inq {
+  margin: 56px 0 0 0;
+}
+.motto-inq ul {
+  list-style: none;
+}
+.motto-inq ul li {
+  font-family: "Noto Serif JP";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 2.4px;
+  margin-bottom: 16px;
+}
+
+.motto-description-inq {
+  margin-top: 64px;
+}
+.motto-description-inq p {
+  margin: 12px 0 0 0;
+}
+
+/*+ ===================================== +*/
+/*+ 主記述部（inq-personal-infoの呼び出し子画面）
+/** ===================================== +*/
+
+.main-description-show {
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.line-container-company-info-show {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.text-company-info-show {
+  margin-left: 8px;
+}
+.line-company-info-show {
+  width: 250px;
+  height: 3px;
+  opacity: 0.50;
+}
+
+.qualifications-show {
+
+}
+.qualifications-show ul {
+  margin: 0;
+  list-style: none;
+}
+.qualifications-show ul li {
+  line-height: 24px;
+  width: 264px;
+  margin: 0 36px 16px -16px;
+  padding: 2px 8px;
+  background-color: rgb(107, 107, 107, 0.10);
+  border-radius: 8px;
+}
+
+.skill-group-show {
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+.skill-kind-show {
+
+}
+.skill-kind-show h5 {
+  padding-bottom: 16px;
+  margin: 0;
+  color: #240ba0;
+}
+.skill-set-show {
+  display: grid;
+  grid-template-columns: 8px 40px 196px 1fr;
+  grid-template-rows: 40px 40px;
+  grid-row-gap: 8px;
+  margin-left: 16px;
+  padding: 0 0 8px 0;
+}
+.skill-title-show {
+  grid-column: 2 / 4;
+  grid-row: 1;
+  margin: 0;
+  padding-left: 8px;
+  align-content: center;
+  background-color: rgba(220, 205, 87, 0.2);
+  border-radius: 8px;
+}
+.skill-years-show {
+  grid-column: 3;
+  grid-row: 2;
+  margin: 0;
+  padding-left: 8px;
+  align-content: center;
+  background-color: rgb(120, 105, 173, 0.2);
+  border-radius: 8px;
+}
+
+/*  ▼ タブレット以上の場合に適用するCSS ▼
+/* -------------------------------------------- */
+/*@media (min-width: 600px) {*/
+@media screen and (min-width: 768px) {
+  .viewport-test{
+    background: #04480b; /* 黄色 */
+  }
+  .ResponsiveSP {
+    display: none;
+  }
+  .ResponsiveTB {
+    display: block;
+  }
+  .ResponsivePC {
+    display: none;
+  }
+
+  /* ========================== */
+  /* フォント定義
+  /* ========================== */
+
+  h2 {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 3.0px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 2.8px;
+  }
+
+  h4 {
+    font-family: "Noto Sans JP";
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 26px;
+    letter-spacing: 2.6px;
+    color: #181818;
+  }
+
+  h5 {
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 2.4px;
+    color: #181818;
+  }
+
+  .regtext {
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 2.4px;
+  }
+
+  .regtext-small {
+    font-family: "Noto Serif JP";
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 32px;
+    letter-spacing: 2.0px;
+    color: #181818;
+  }
+
+  /*+ ===================================== +*/
+  /*+ header部
+  /** ===================================== +*/
+  /* ヘッダー全体の領域の定義 */
+  header {
+    display: block;
+    height: 200px;
+    width: 100%;
+  }
+  .header-serv-sub,
+  .header-inq {
+    height: 112px;
+  }
+
+  /* ヘッダーのトレードマークの定義 */
+  .trade-mark {
+    top: 64px;
+    left: 32px;
+    width: 280px;
+    height: 80px;
+/*    background-color: orange;*/
+  }
+  .trade-mark-serv-sub,
+  .trade-mark-inq {
+    top: 16px;
+  }
+  .LogoMark {
+    width: 80px;
+    height: 80px;
+/*    background-color: #62f56c;*/
+  }
+  .LogoMark img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .LogoText {
+    height: 24px;
+    margin-top: 47px;
+    padding-left: 0 0 0 8px;
+/*    background-color: #fe6464;*/
+  }
+  .LogoTextFig {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 2.4px;
+/*    color: #c9c9c9;*/
+  }
+
+  /* ヘッダーナビゲーション表示にする */
+  .header-nav {
+    display: block;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 20px;
+    margin-top: -20px;
+  /*  background-color: #fe9393;*/
+  }
+  .header-nav nav {
+    width: 660px;
+    margin: 0 auto;
+  }
+  .header-nav nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+  .header-nav nav ul li {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2.4px;
+  }
+  .header-nav nav ul li a {
+    text-decoration: none;
+    color: #7241FE;
+    display: block;
+    padding: 5px 10px;
+  }
+  .header-nav nav ul li a:hover {
+    color: #ecd525;
+  }
+
+  .header-nav-serv-sub,
+  .header-nav-inq,
+  .header-nav-show {
+    display: flex;
+  }
+  .header-nav-serv-sub span,
+  .header-nav-inq span,
+  .header-nav-show span {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2.4px;
+    margin: 0 auto;
+  }
+  .header-nav-serv-sub span a,
+  .header-nav-inq span a,
+  .header-nav-show span a   {
+    text-decoration: none;
+    color: #7241FE;
+    display: block;
+    padding: 5px 10px;
+  }
+  .header-nav-serv-sub span a:hover,
+  .header-nav-inq span a:hover,
+  .header-nav-show span a:hover {
+    color: #ecd525;
+  }
+
+  /*** ハンバーガーメニュー ***/
+  /* 非表示にする */
+  .hamburger-menu,
+  .hamburger-menu-serv-sub,
+  .hamburger-menu-inq,
+  .hamburger-menu-show {
+    display: none;
+  }
+
+
+  /*+ until here about header ============= +*/
+
+  /*+ ===================================== +*/
+  /*+ footer部
+  /** ===================================== +*/
+  /* フッターの構造 */
+  .footer {
+  }
+
+  /* フッターのサイズ・文字色 */
+  .footer-title {
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 2.2px;
+  }
+  .footer-text {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr 368px 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 36px;
+    width: 100%;
+    margin: 56px auto 0;
+    padding: 0;
+  }
+
+  .footer-nav {
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+
+  .footer-address {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .footer-telmail {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .footer-business-hours {
+    grid-column: 4;
+    grid-row: 3;
+  }
+
+  .footer-text {
+    margin-top: 16px;
+    margin-left: 40px;
+  }
+
+  /* ナビゲーション */
+  .footer-serv-sub {
+    display: block;
+    width: 100%;
+    height: 178px;
+    margin: 0 auto;
+  }
+  .footer-nav nav {
+    margin-top: 32px;
+    margin-left: 40px;
+  }
+  .footer-nav nav ul {
+  }
+  .footer-nav nav ul li {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2.16px;
+  }
+  .footer-nav nav ul li a {
+    padding: 5px 10px;
+  }
+  .footer-nav nav ul li a:hover {
+  }
+
+  /* コピーライト */
+  .footer-copyright {
+    height: 68px;
+  }
+
+  .copyright-text {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 16px 16px 0;
+  }
+
+  /*+ until here about main-visual ======== +*/
+
+  /*+ ===================================== +*/
+  /*+ main部
+  /** ===================================== +*/
+  /*+ ===================================== +*/
+  /*+ ビジュアルメイン部
+  /** ===================================== +*/
+  /* ビジュアルメイン画像 */
+  .main-visual {
+  }
+
+  .main-visula-fig {
+    height: 496px;
+  }
+
+  .main-visula-fig img {
+  }
+
+  /* タイトル文字 */
+  .main-visual-title-panel {
+    height: 496px;
+    margin-top: -496px;
+  }
+
+  .main-visual-title-area {
+    margin-top: -72px;
+  }
+
+  .main-visual-title span {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  .main-visula-narration {
+    font-size: 24px;
+  }
+
+  /*+ until here about main-visual ======== +*/
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（top）
+  /** ===================================== +*/
+  /*+ ===================================== +*/
+  /*+ 主記述部（index）
+  /** ===================================== +*/
+
+  /*+++ ビジュアルメイン +++*/
+
+  .main-visual-title-figure-index span {
+    letter-spacing: 4.8px;
+  }
+
+  .main-visula-narration-index {
+    line-height: 48px;
+    letter-spacing: 2.0px;
+  }
+
+  /*+++ 主記述部 +++*/
+  /* 全体の構造 */
+  .declaration-index {
+    display: grid;
+    grid-template-columns: 2fr 6fr 0.5fr 6fr 2fr;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 32px;
+  }
+
+  .title-1-index {
+    grid-column: 2 / 5;
+    grid-row: 1;
+  }
+
+  .what-company-index {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .what-service-index {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .title-2-index {
+    grid-column: 2 / 5;
+    grid-row: 3;
+  }
+
+  .principal-index {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .motto {
+    grid-column: 4;
+    grid-row: 4;
+  }
+
+  /* 個別の構造 */
+  .title-area-index {
+  }
+  .title-index {
+  }
+  .title-index h3 {
+  }
+
+  /* 各々の掲示 */
+  .note-index {
+    margin-left: 18px;
+  }
+  .note-index p {
+    line-height: 28px;
+    letter-spacing: 2.4px;
+    padding: 0 36px;
+    margin-bottom: 24px;
+  }
+
+  .figure-index {
+    width: 300px;
+    height: 600px;
+  }
+
+  .caption-index {
+    height: 96px;
+  }
+  .caption-index p {
+    font-size: 26px;
+    font-weight:600;
+    line-height: 36px;
+    letter-spacing:2.6px;
+    padding-top: 4px;
+  }
+  .hr-index {
+  }
+  .hr-index img {
+  }
+  .describe-index {
+    height: 300px;
+    margin: -8px 0;
+    background-color: #4442d6;
+  }
+  .describe-index ul {
+    padding-top: 30px;
+    height: 300px;
+  }
+  .describe-index ul li {
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 2.2px;
+    margin-left: 8px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  .figure-plate-index {
+    height: 440px;
+  }
+  .figure-plate-index img {
+  }
+  .textplate-index {
+    margin-top: -440px;
+  }
+
+  .jamppage-index {
+    width: 100%;
+    padding-top: 88px;;
+  }
+  .jamp-fig-index {
+    width: 240px;
+    height: 54px;
+  }
+  .jamp-fig-index img {
+  }
+  .jamp-message-index {
+    padding-left: 48px;
+    margin-top: -54px;
+  }
+  .jamp-message-index p {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1.8px;
+  }
+
+  .principal-caption-index p {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 2.6px;
+    padding-top: 26px;
+  }
+  .principal-describe-index ul {
+    padding-top: 50px;
+    margin-left: 24px;
+    margin-right: 4px;
+  }
+  .principal-describe-index ul li {
+    font-size: 22px;
+    padding-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+
+  .motto-caption-index p {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 2.6px;
+    padding-top: 26px;
+  }
+  .motto-describe-index {
+    width: 100%;
+    padding-top: 4px;
+  }
+  .motto-describe-index ul {
+    padding-top: 50px;
+    margin-left: 0;
+    margin-right: 4px;
+  }
+  .motto-describe-index ul li {
+    font-size: 22px;
+    padding-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（company）
+  /** ===================================== +*/
+
+  /* ビジュアルメイン */
+  .main-visual-title-area {
+    padding-top: 112px;
+    row-gap: 4px;
+  }
+
+  .main-visual-title-figure-company span {
+    letter-spacing: 12px;
+  }
+
+  .main-visula-narration-company {
+    line-height: 36px;
+    letter-spacing: 2.0px;
+  }
+
+  /*AAA*/
+  /*+++ カルーセル構成 +++*/
+  /* カルーセル図全対枠 */
+  .curousel-box{
+    display: block;
+    width: 100%;
+    height: 498px;
+  }
+  .curousel-visual {
+    display: block;
+    position: relative;
+    top: 100px;
+  }
+  /* カルーセル背景図 */
+  .curousel-plate {
+  }
+  .curousel-main-fig {
+    height: 498px;
+  }
+  .curousel-main-fig img {
+  }
+  /* カルーセル添図 */
+  .curousel-sub-fig {
+    width: 160px;
+    height: 160px;
+    margin: -340px 0 0 92px;
+  }
+  .curousel-sub-fig img {
+    width: 100%;
+    height: 100%;
+    object-fit: over;
+  }
+  /* カルーセルタイトル */
+  .curousel-visual a {
+    text-decoration: none;
+  }
+  .surousel-descript {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 2.4px;
+    margin: -94px 0 0 288px;
+  }
+
+  /*+++ 主記述部 +++*/
+  /* 全体の構造 */
+  .flexbox-right-company {
+    display: grid;
+    grid-template-columns: 1fr 264px;
+    grid-template-rows: 72px auto 88px;
+    grid-template-areas:
+        "TitleBox-comp TitleBox-comp"
+        "TextBox-comp FigBox-comp"
+        "ReturnBox-comp ReturnBox-comp";
+/*    background-color: #e8f290;*/
+  }
+
+  .flexbox-left-company {
+    display: grid;
+    grid-template-columns: 264px 1fr;
+    grid-template-rows: 72px auto 88px;
+    grid-column-gap: 16px;
+    grid-template-areas:
+        "TitleBox-comp TitleBox-comp"
+        "FigBox-comp TextBox-comp"
+        "ReturnBox-comp ReturnBox-comp";
+/*    background-color: #e8f290;*/
+  }
+
+  .title-area-company {
+    height: 72px;
+/*    background-color: #73ffa2;*/
+  }
+
+  .title-comp {
+  }
+  .h3-comp {
+  }
+
+  .text-area-company {
+    display: block;
+    grid-area: TextBox-comp;
+/*    background-color: #ff9f9f;*/
+  }
+
+  .figure-area-company {
+    display: block;
+    grid-area: FigBox-comp;
+    width: 200px;
+    height: 200px;
+    margin: 32px auto auto auto;
+    object-fit: cover;
+/*    background-color: #a670f2;*/
+  }
+  .figure-area-company img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .return-top-company {
+    display: block;
+    grid-area: ReturnBox-comp;
+/*    background-color: #a63d3d;*/
+  }
+
+  /* 個別の構造 */
+  .title-index {
+  }
+
+  .return-top-company {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .return-top-company span {
+    font-family: "Noto Sans JP";
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 16px;
+    letter-spacing: 1.4px;
+    padding-right: 8px;
+    color: #221EE8;
+  }
+  .return-top-company span a {
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+  }
+
+  .sub-text-comp {
+    padding-left: 24px;
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（service）
+  /** ===================================== +*/
+
+  /*+++ ビジュアルメイン +++*/
+  .main-visual-title-area-cservice {
+  }
+
+  .main-visual-title-figure-service span {
+  }
+
+  .main-visula-narration-service {
+  }
+
+  /*+++ 主記述部 +++*/
+  /* 全体の構造 */
+  .abstract-service {
+  }
+
+  .display-bord-service {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 60px;
+    width: 100%;
+    margin: 64px auto;
+  }
+
+  .web-service {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .si-service {
+    display: block;
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .pm-service {
+    display: block;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .consul-service {
+    display: block;
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .plate-service {
+    display: block;
+    width: 320px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .plate-service img {
+  }
+
+  .web-service p {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 2.6px;
+    margin-top: -126px;
+    padding-right: 36px;
+  }
+
+  .si-service p {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 2.6px;
+    margin-top: -126px;
+    padding-right: 32px;
+  }
+
+  .pm-service p {
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 3.6px;
+    margin-top: -144px;
+    margin-left: -32px;
+  }
+
+  .consul-service p {
+    font-size: 26px;
+    line-height: 34px;
+    letter-spacing: 2.6px;
+    margin-top: -144px;
+    margin-left: -32px;
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（aboutus）
+  /** ===================================== +*/
+
+  /*+++ ビジュアルメイン +++*/
+  .main-visual-title-area-aboutus {
+  }
+
+  .main-visual-title-figure-aboutus span {
+  }
+
+  .main-visula-narration-aboutus {
+  }
+
+  /*+++ 主記述部 +++*/
+  /* 全体の構造 */
+  .refarence-aboutus {
+    display: grid;
+    grid-template-columns: 1fr 4fr 8fr;
+    grid-template-rows: repeat( 5, auto );
+    grid-row-gap: 62px;
+    width: 100%;
+    margin:0 auto 48px auto;
+  }
+
+  .company-aboutus {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .office-aboutus {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .devenv-aboutus {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .profile-aboutus {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .motto-aboutus {
+    grid-column: 2;
+    grid-row: 5;
+  }
+
+  .trademake-part-abotus h3 {
+    margin-top: 56px;
+    margin-bottom: 40px;
+  }
+
+  .trademark-exp-aboutus {
+    display: grid;
+    grid-template-columns: 24px 240px 1fr;
+    grid-template-rows: 200px 36px auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .trademark-aboutus {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    margin: 0 auto 40px;
+    padding-top: 10px;
+  }
+
+  .caption-aboutus {
+    grid-column: 2 / 4;
+    grid-row: 3;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .caption-aboutus p {
+    margin: 0;
+    padding-left: 16px;
+  }
+
+  .trademark-aboutus div {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .trademark-aboutus div img {
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（inquiry）
+  /** ===================================== +*/
+
+  /*+++ ビジュアルメイン +++*/
+  /* メインビジュアルを非表示 */
+  .main-visual-inquiry {
+    display: none;
+  }
+
+  .main-visual-title-figure-inquiry span {
+    letter-spacing: 4.8px;
+  }
+
+  .main-visula-narration-inquiry {
+    line-height: 48px;
+    letter-spacing: 2.0px;
+  }
+
+  /*+++ 主記述部 +++*/
+  .main-description-inquiry {
+    margin-top: 36px;
+    margin-left: 36px;
+  }
+
+  .container-inquiry {
+    display: grid;
+    grid-template-columns: 0px 300px 40px 300px 1fr;
+    grid-template-rows: 48px;
+    margin: 0 0 32px 16px;
+  }
+  .child-label-inquiry {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+  }
+  .child-body-inquiry {
+    display: block;
+    grid-column: 4;
+    grid-row: 1;
+    align-items: center;
+  }
+
+  .container-02-inquiry {
+    display: grid;
+    grid-template-columns: 0px 640px 1fr;
+    grid-template-rows: 80px auto;
+    grid-row-gap: 4px;
+    margin: 0 0 32px 16px;
+  }
+  .child-label-02-inquiry {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+  }
+  .child-body-02-inquiry {
+    display: block;
+    grid-column: 2;
+    grid-row: 2;
+    align-items: center;
+  }
+
+  .container-03-inquiry {
+    display: grid;
+    grid-template-columns: 0px 640px 1fr;
+    grid-template-rows: 48px auto;
+    grid-row-gap: 4px;
+    margin: 0 0 32px 16px;
+  }
+  .child-label-03-inquiry {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+  }
+  .child-body-03-inquiry {
+    display: block;
+    grid-column: 2;
+    grid-row: 2;
+    align-items: center;
+  }
+
+  .label-inquiry,
+  .label-02-inquiry {
+    font-family: "Noto Serif JP";
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 40px;
+    letter-spacing: 2.2px;
+    color: #181818;
+    padding-left: 16px;
+    border-bottom: 2px solid  rgba(16, 16, 16, 0.30);
+    background-color: rgb(252, 255, 58, 0.20);
+  }
+  .label-02-inquiry {
+    font-family: "Noto Serif JP";
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: 2.4px;
+    color: #181818;
+  }
+  .contact-textbox,
+  .radiobox-inquiry,
+  .select-inquiry  {
+    height: 48px;
+    width: 300px;
+    padding-left: 16px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid rgba(16, 16, 16, 0.30);
+    background-color: rgba(108, 108, 108, 0.20);
+  }
+
+  .body-02-inquiry {
+    padding: 8px;
+    width: 640px;
+  }
+  .select-query-inquery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .select-query-inquery label {
+    padding: 4px 6px;
+  }
+
+  .flex-inquiry label {
+    padding: 12px 8px;
+  }
+
+  .sort-inquiry {
+  }
+  .sp-query {
+    margin-top: -18px;
+  }
+
+  #send-btn,
+  #nosend-btn {
+    padding: 4px 8px;
+    margin-top: 64px;
+    margin-left: 12px;
+    margin-bottom: 48px;
+    width: 160px;
+    height: 54px;
+  }
+  #send-btn input {
+  }
+  #nosend-btn img {
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（serviceの呼び出し子画面）
+  /** ===================================== +*/
+  .main-description-serv-sub {
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
+
+  .h2-serv-sub {
+    padding-top: 32px;
+  }
+
+  .h3-serv-sub {
+    padding-top: 48px;
+    padding-left: 36px;
+  }
+
+  .h4-serv-sub {
+    padding-top: 32px;
+    padding-left: 64px;
+  }
+
+  .h5-serv-sub {
+    line-height: 28px;
+    margin: 0;
+    padding-top: 8px;
+    padding-left: 96px;
+    padding-bottom: 8px;
+  }
+
+  .p-1-serv-sub {
+    padding-top: 16px;
+    padding-left: 64px;
+    padding-right: 40px;
+  }
+  .p-2-serv-sub {
+    padding-top: 16px;
+    padding-left: 96px;
+    padding-right: 40px;
+  }
+  .p-2-serv-notop-sub {
+    padding-top: 0;
+    padding-left: 96px;
+    padding-right: 40px;
+  }
+  .p-3-serv-sub {
+    margin: 0;
+    padding-top: 8px;
+    padding-left: 120px;
+    padding-right: 40px;
+  }
+
+  .ul-0-serv-sub {
+    margin: 0;
+    padding-top: 8px;
+  }
+  .ul-0-serv-sub li {
+    margin-left: 80px;
+    margin-bottom: 8px;
+    padding-right: 40px;
+  }
+
+  .ul-serv-sub {
+    padding-left: 116px;
+    padding-top: 16px;
+  }
+  .ul-serv-sub li {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2.0px;
+    margin-left: 24px;
+    margin-bottom: 16px;
+    padding-right: 40px;
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（aboutusの呼び出し子画面）
+  /** ===================================== +*/
+
+  .main-description-inq {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-description-inq {
+    display: block;
+    padding: 8px 24px 24px 24px;
+  }
+
+  /*** inq-company-info ***/
+  .line-container-company-info-inq {
+  }
+  .text-company-info-inq {
+    margin-right: 10px;
+  }
+  .line-company-info-inq {
+    width: 250px;
+  }
+
+  .line-container-company-info-inq {
+    margin-top: 40px;
+  }
+  .company-info-container-inq {
+    display: grid;
+    grid-template-columns: 1fr 176px 400px 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 8px;
+    padding-bottom: 16px;
+  }
+
+  .company-info-head-inq {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .company-info-body-inq {
+    grid-column: 3;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .map-inq {
+    display: grid;
+    position: relative;
+    grid-template-columns: 16px 560px 1fr;
+    grid-template-rows: 360px;
+    margin-left: 24px;
+  }
+  .map-inq iframe {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /*** inq-office-info ***/
+  .line-container-company-info-inq {
+    margin-top: 40px;
+  }
+  .header-h3-inq .text-company-info-inq h3 {
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 32px;
+  }
+  .company-info-inq p {
+    padding-top: 16px;
+    line-height: 32px;
+    margin-left: 68px;
+  }
+
+  /*** inq-environ-info ***/
+  .environ-info-inq {
+    margin: 24px 0 32px 64px;
+    width: 400px;
+  }
+  .environ-info-inq img {
+  }
+
+  /*** inq-environ-info ***/
+  .environ-info-inq {
+    margin: 16px 0 24px 0;
+    width: 320px;
+    overflow: hidden;
+  }
+  .environ-info-inq img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0.5px solid rgba( 64, 64, 64, 0.20 );
+  }
+
+  /*** inq-personal-info ***/
+  .name-inq {
+    margin-top: 32px;
+    margin-left: 54px
+  }
+  .name-inq .name-kanji-inq {
+    font-family: "Noto Serif JP";
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+  }
+  .name-inq .name-kana-inq {
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    line-height: 24px;
+    margin:  4px 0 0 2px;
+    padding: 0;
+  }
+
+  .container-personal-info-inq {
+    display: grid;
+    grid-template-columns: 32px 1fr 32px;
+    grid-template-rows: auto auto;
+    grid-row-gap: 24px;
+    margin: 40px auto 0 auto;
+  }
+  .figure-personal-info-inq {
+    grid-column: 2;
+    grid-row: 1;
+    display: block;
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .figure-personal-info-inq img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 0.5px solid rgba( 64, 64, 64, 0.20 );
+  }
+  .text-personal-info-inq {
+    grid-column: 2;
+    grid-row: 2;
+    margin: -32px auto 0;
+  }
+  .text-personal-info-inq p {
+
+  }
+
+  .text-personal-info-inq ul {
+    margin-left: -16px;
+  }
+  .text-personal-info-inq ul li {
+    line-height: 24px;
+    padding-bottom: 8px;
+  }
+
+  .career-info-inq p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 56px;
+  }
+  .one-career-info-inq details {
+    display: grid;
+    grid-template-columns: 80px 10fr 1fr;
+    grid-template-rows: 32px auto;
+    margin: 0 16px 32px 56px;
+  }
+  .one-career-info-inq details summary {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    font-style: "Noto Sans JP";
+    font-size: 22px;
+  }
+  .one-career-info-inq details summary::before {
+    content: "▶ ";
+  }
+  .one-career-info-inq details figure {
+    display: block;
+    grid-column: 2;
+    grid-row: 2;
+    width: auto;
+    overflow: hidden;
+  }
+  .one-career-info-inq details figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .career-container-inq figure {
+    display: block;
+  }
+  .skill-exp-inq p {
+    margin-left: 32px;
+  }
+  .career-notes-sp {
+    display: none;
+  }
+  .career-notes-nonsp {
+    display: block;
+  }
+
+
+  .kosokoso-inq {
+    display: block;
+    margin: 16px 0 0 0;
+    line-height: 26px;
+  }
+
+  .show-carrer-inq{
+    padding: 0;
+    margin: 16px 0 0 64px;
+  }
+
+  .hobby-container-inq {
+    margin-left: 56px;
+  }
+  .hobby-hanazono-fig-inq {
+    margin-left: 0;
+    width: 600px;
+    height: 152px;
+    overflow: hidden;
+  }
+  .hobby-hanazono-fig-inq img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*** inq-motto ***/
+  .motto-inq {
+    margin: 64px 0 0 48px;
+  }
+  .motto-inq ul {
+    list-style: none;
+  }
+  .motto-inq ul li {
+    font-family: "Noto Serif JP";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 2.8px;
+    margin-bottom: 40px;
+  }
+
+  .motto-description-inq {
+    margin-top: 64px;
+    margin-left: 32px;
+    margin-bottom: 16px;
+  }
+  .motto-description-inq p {
+    margin: 12px 0 18px 0;
+    line-height: 32px;
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（inq-personal-infoの呼び出し子画面）
+  /** ===================================== +*/
+
+  .main-description-show {
+    display: block;
+    margin-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .line-container-company-info-show {
+    margin-left: 0;
+  }
+  .text-company-info-show {
+    margin-right: 8px;
+  }
+  .line-company-info-show {
+    width: 300px;
+  }
+
+  .qualifications-show {
+
+  }
+  .qualifications-show ul {
+    margin: 0;
+  }
+  .qualifications-show ul li {
+    line-height: 40px;
+    width: 512px;
+    margin: 0 32px 16px -16px;
+    padding: 2px 16px;
+    border-radius: 12px;
+  }
+
+  .skill-group-show {
+    margin-left: 24px;
+    margin-bottom: 24px;
+  }
+  .skill-kind-show {
+
+  }
+  .skill-kind-show h5 {
+    padding-bottom: 16px;
+    margin: 0;
+  }
+  .skill-set-show {
+    display: grid;
+    grid-template-columns: 8px 320px 160px 1fr;
+    grid-template-rows: 48px;
+    grid-column-gap: 16px;
+    padding: 0 0 8px 0;
+  }
+  .skill-title-show {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    padding-left: 16px;
+    align-content: center;
+    background-color: rgba(220, 205, 87, 0.2);
+    border-radius: 12px;
+  }
+  .skill-years-show {
+    grid-column: 3;
+    grid-row: 1;
+    margin: 0;
+    padding-left: 16px;
+    align-content: center;
+    background-color: rgb(120, 105, 173, 0.2);
+    border-radius: 12px;
+  }
+
+/* end media tablet phone */
+}
+
+/* -------------------------------------------- */
+/*  ▼PCの場合に適用するCSS ▼
+/* -------------------------------------------- */
+/*@media (min-width: 1024px) {*/
+@media screen and (min-width: 1024px) {
+  .viewport-test{
+    background: #1d2a6b; /* 水色 */
+  }
+  .ResponsiveSP {
+    display: none;
+  }
+  .ResponsiveTB {
+    display: none;
+  }
+  .ResponsivePC {
+    display: block;
+  }
+  /* 表示の最大サイズ */
+  body {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+  /* ========================== */
+  /* フォント定義
+  /* ========================== */
+
+  h2 {
+    font-size: 34px;
+    line-height: 34px;
+    letter-spacing: 3.4px;
+  }
+
+  h3 {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 3.0px;
+  }
+
+  h4 {
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 2.6px;
+  }
+
+  h5 {
+    font-size: 22px;
+    line-height: 22px;
+    letter-spacing: 2.2px;
+  }
+
+  .regtext {
+    font-size: 22px;
+    line-height: 40px;
+    letter-spacing: 2.2px;
+  }
+
+  .regtext-small {
+    font-family: "Noto Serif JP";
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 32px;
+    letter-spacing: 2.0px;
+    color: #181818;
+  }
+
+  /*+ ===================================== +*?
+  /*+ header部
+  /** ===================================== +*?//
+  /* ヘッダー全体の領域の定義 */
+  header {
+    display: block;
+    height: 240px;
+    width: 100%;
+  }
+  .header-serv-sub,
+  .header-inq {
+    height: 136px;
+  }
+
+  /* ヘッダーのトレードマークの定義 */
+  .trade-mark {
+    display: flex;
+    position: relative;
+    top: 96px;
+    left: 72px;
+    width: 320px;
+    height: 96px;
+/*    background-color: orange;*/
+  }
+  .trade-mark-serv-sub,
+  .trade-mark-inq {
+    top: 16px;
+  }
+  .LogoMark {
+    width: 96px;
+    height: 96px;
+    margin: 0;
+/*    background-color: #62f56c;*/
+  }
+  .LogoMark img {
+  }
+  .LogoText {
+    height: 24px;
+    margin-top: 58px;
+    padding-left: 0 0 0 8px;
+/*    background-color: #fe6464;*/
+  }
+  .LogoTextFig {
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 2.8px;
+  }
+
+  /* ヘッダーナビゲーション表示にする */
+  .header-nav {
+    display: block;
+    position: relative;
+    top: 128px;
+    width: 100%;
+    height: 20px;
+/*    background-color: #fe9393;*/
+  }
+  .header-nav nav {
+    width: 630px;
+    margin: 0 auto;
+  }
+  .header-nav nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    align-items: center;
+    gap: 20px;
+  }
+  .header-nav nav ul li {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 2.4px;
+  }
+  .header-nav nav ul li a {
+    text-decoration: none;
+    padding: 5px 10px;
+  }
+  .header-nav nav ul li a:hover {
+  }
+
+  /*+ until here about header ============= +*/
+
+  /*+ ===================================== +*/
+  /*+ footer部
+  /** ===================================== +*/
+  /* フッターの構造 */
+  .footer {
+  }
+
+  /* フッターのサイズ・文字色 */
+  .footer-title {
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 2.2px;
+  }
+  .footer-text {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+  }
+
+  /* フッター構造 */
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr 368px 1fr 368px 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 36px;
+    width: 100%;
+    margin: 64px auto 0;
+    padding: 0;
+  }
+
+  .footer-nav {
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+
+  .footer-address {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .footer-telmail {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .footer-business-hours {
+    grid-column: 6;
+    grid-row: 1 / 3;
+  }
+
+  .footer-text {
+    margin-top: 16px;
+    margin-left: 40px;
+  }
+
+  /* ナビゲーション */
+  .footer-nav nav {
+    margin-top: 32px;
+    margin-left: 40px;
+  }
+  .footer-nav nav ul {
+  }
+  .footer-nav nav ul li {
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2.16px;
+  }
+  .footer-nav nav ul li a {
+    padding: 5px 10px;
+  }
+  .footer-nav nav ul li a:hover {
+  }
+
+  /* コピーライト */
+  .footer-copyright {
+    width: 100%;
+    height: 68px;
+  }
+
+  .copyright-text {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0 16px 16px 0;
+  }
+
+
+  /*+ until here about footer ============= +*/
+
+  /*+ ===================================== +*/
+  /*+ main部
+  /** ===================================== +*/
+  /*+ ===================================== +*/
+  /*+ ビジュアルメイン部
+  /** ===================================== +*/
+  /* ビジュアルメイン画像 */
+  .main-visual {
+  }
+
+  .main-visula-fig {
+    height: 864px;
+  }
+
+  .main-visula-fig img {
+  }
+
+  /* タイトル文字 */
+  .main-visual-title-panel {
+    height: 864px;
+    margin-top: -864px;
+  }
+
+  .main-visual-title-area {
+    padding-top: 200px;
+  }
+
+  .main-visual-title span {
+    font-size: 96px;
+    line-height: 96px;
+  }
+
+  .main-visula-narration {
+    font-size: 32px;
+  }
+
+  /* メイン記述部 */
+  main {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /*+ until here about main-visual ======== +*/
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（index）
+  /** ===================================== +*/
+
+  /*+++ ビジュアルメイン +++*/
+  .main-visual-title-figure-index span {
+    letter-spacing: 9.6px;
+  }
+
+  .main-visula-narration-index {
+    line-height: 72px;
+    letter-spacing: 3.2px;
+  }
+
+/*+++ 主記述部 +++*/
+  /* 全体の構造 */
+  .declaration-index {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 4fr 4fr 4fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .title-1-index {
+    grid-column: 2 / 6;
+    grid-row: 1;
+  }
+
+  .what-company-index {
+    grid-column: 2 / 4;
+    grid-row: 2;
+  }
+
+  .what-service-index {
+    grid-column: 4 / 6;
+    grid-row: 2;
+  }
+
+  .title-2-index {
+    grid-column: 3 / 7;
+    grid-row: 3;
+ }
+
+  .principal-index {
+    grid-column: 3 / 5;
+    grid-row: 4;
+  }
+
+  .motto {
+    grid-column: 5 / 7;
+    grid-row: 4;
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（company）
+  /** ===================================== +*/
+
+  /* ビジュアルメイン */
+  .main-visual-title-area {
+    margin: 0 auto;
+    row-gap: 20px;
+  }
+
+  .main-visual-title-figure-company span {
+    letter-spacing: 24.0px;
+  }
+
+  .main-visula-narration-company {
+    line-height: 64px;
+    letter-spacing: 3.2px;
+  }
+
+ .flexbox-right-company {
+    grid-template-columns: 1fr 344px;
+    grid-template-rows: 72px auto 88px;
+/*    background-color: #e8f290;*/
+  }
+
+  .flexbox-left-company {
+    grid-template-columns: 344px 1fr;
+    grid-template-rows: 72px auto 88px;
+    grid-column-gap: 16px;
+/*    background-color: #e8f290;*/
+  }
+
+  .figure-area-company {
+    width: 280px;
+    height: 280px;
+    margin: 32px auto auto auto;
+/*    background-color: #a670f2;*/
+  }
+
+  .title-in-text-comp {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 2.8px;
+  }
+
+  /*AAA*/
+  /*+++ カルーセル構成 +++*/
+  /* カルーセル図全対枠 */
+  .curousel-box {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 864px;
+  }
+  .curousel-visual {
+    display: block;
+    position: relative;
+    height: 864px;
+  }
+  /* カルーセル背景図 */
+  .curousel-plate {
+    height: 864px;
+  }
+  .curousel-main-fig {
+    width: 100%;
+    height: 864px;
+  }
+  .curousel-main-fig img {
+  }
+  /* カルーセル添図 */
+  .curousel-sub-fig {
+    width: 260px;
+    height: 260px;
+    margin: -560px 0 0 160px;
+  }
+  .curousel-sub-fig img {
+  }
+  /* カルーセルタイトル */
+  .curousel-visual a {
+  }
+  .surousel-descript {
+    font-size: 54px;
+    line-height: 54px;
+    letter-spacing: 5.4px;
+    margin: -154px 0 0 480px;
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（service）
+  /** ===================================== +*/
+
+  .display-bord-service {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 80px;
+    width: 100%;
+    margin: 64px auto;
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（aboutus）
+  /** ===================================== +*/
+
+  /*+++ ビジュアルメイン +++*/
+  .main-visual-title-area-aboutus {
+  }
+
+  .main-visual-title-figure-aboutus span {
+  }
+
+  .main-visula-narration-aboutus {
+  }
+
+  /*+++ 主記述部 +++*/
+  /* 全体の構造 */
+  .refarence-aboutus {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 4fr 1fr;
+    grid-template-rows: repeat( 3, auto );
+    grid-row-gap: 62px;
+    width: 100%;
+    margin:0 auto 32px auto;
+  }
+
+  .company-aboutus {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .office-aboutus {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+  .devenv-aboutus {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .profile-aboutus {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  .motto-aboutus {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+    .trademark-exp-aboutus {
+    display: grid;
+    grid-template-columns: 40px 200px 32px 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .trademark-aboutus {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    margin: 0 auto 40px;
+    padding-top: 10px;
+  }
+
+  .caption-aboutus {
+    grid-column: 4;
+    grid-row: 1;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .caption-aboutus p {
+    margin: 0;
+    padding-left: 16px;
+  }
+
+  .trademark-aboutus div {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .trademark-aboutus div img {
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（inquiry）
+  /** ===================================== +*/
+
+  /* メインビジュアルを非表示 */
+  .main-visual-inquiry {
+    display: none;
+  }
+  /*+++ ビジュアルメイン +++*/
+  .main-visual-title-figure-inquiry span {
+    letter-spacing: 9.6px;
+  }
+
+  .main-visula-narration-inquiry {
+    line-height: 72px;
+    letter-spacing: 3.2px;
+  }
+
+    /*+++ 主記述部 +++*/
+  .main-description-inquiry {
+    margin-top: 36px;
+    margin-left: 48px;
+  }
+
+  .container-inquiry {
+    display: grid;
+    grid-template-columns: 0px 360px 40px 540px 1fr;
+    grid-template-rows: 54px;
+    margin: 0 0 24px 16px;
+  }
+  .child-label-inquiry {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    align-items: center;
+  }
+  .child-body-inquiry {
+    display: block;
+    grid-column: 4;
+    grid-row: 1;
+    align-items: center;
+  }
+
+  .container-02-inquiry {
+    display: grid;
+    grid-template-columns: 0px 940px 1fr;
+    grid-template-rows: 54px auto;
+    grid-row-gap: 6px;
+    margin: 0 0 24px 16px;
+  }
+
+  .container-03-inquiry {
+    display: grid;
+    grid-template-columns: 0px 940px 1fr;
+    grid-template-rows: 54px auto;
+    grid-row-gap: 4px;
+    margin: 0 0 32px 16px;
+  }
+
+  .label-inquiry {
+    padding-left: 16px;
+    border-bottom: 2px solid  rgba(16, 16, 16, 0.30);
+    background-color: rgb(252, 255, 58, 0.20);
+  }
+  .contact-textbox,
+  .radiobox-inquiry,
+  .select-inquiry {
+    height: 54px;
+    width: 540px;
+    padding-left: 16px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid rgba(16, 16, 16, 0.30);
+    background-color: rgba(108, 108, 108, 0.20);
+  }
+
+  .body-02-inquiry {
+    padding: 8px;
+    width: 940px;
+  }
+  .select-query-inquery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .select-query-inquery label {
+    padding: 2px 6px;
+  }
+
+  .flex-inquiry label {
+    padding: 8px 8px;
+  }
+
+  .sort-inquiry {
+  }
+  .sp-query {
+    margin-top: -16px;
+  }
+
+  #send-btn,
+  #nosend-btn{
+    padding: 4px 8px;
+    margin-top: 64px;
+    margin-left: 12px;
+    margin-bottom: 54px;
+    width: 200px;
+    height: 60px;
+  }
+  #send-btn input {
+    width: 100%;
+    height: 100%;
+  }
+  #nosend-btn img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（serviceの呼び出し子画面）
+  /** ===================================== +*/
+  .main-description-serv-sub {
+    padding-left: 62px;
+    padding-bottom: 40px;
+  }
+
+  .h2-serv-sub {
+    padding-top: 48px;
+  }
+
+  .h3-serv-sub {
+    padding-top: 40px;
+    padding-left: 32px;
+  }
+
+  .h4-serv-sub {
+    padding-top: 24px;
+    padding-left: 64px;
+  }
+
+  .p-1-serv-sub {
+    padding-top: 16px;
+    padding-left: 64px;
+    padding-right: 96px;
+  }
+  .p-2-serv-sub {
+    padding-top: 16px;
+    padding-left: 96px;
+  }
+  .p-2-serv-notop-sub {
+    padding-top: 0;
+    padding-left: 96px;
+  }
+
+  .ul-0-serv-sub {
+    margin: 0;
+    padding-top: 8px;
+  }
+  .ul-0-serv-sub li {
+    margin-left: 80px;
+    margin-bottom: 8px;
+    padding-right: 96px;
+  }
+
+  .ul-serv-sub {
+    padding-left: 116px;
+    padding-top: 16px;
+  }
+  .ul-serv-sub li {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2.0px;
+    margin-left: 24px;
+    margin-bottom: 16px;
+    padding-right: 96px;
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（aboutusの呼び出し子画面）
+  /** ===================================== +*/
+
+  /*** inq-company-info ***/
+  .main-description-inq {
+    margin: 0 32px 16px;
+  }
+
+  .line-container-company-info-inq {
+    margin-top: 56px;
+  }
+  .text-company-info-inq {
+    margin-right: 16px;
+  }
+  .line-company-info-inq {
+    width: 300px;
+  }
+
+  .main-description-inq {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 24px;
+  }
+
+  .company-info-container-inq {
+    display: grid;
+    grid-template-columns: 64px 176px 580px 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 12px;
+    padding-bottom: 24px;
+  }
+
+  .company-info-head-inq {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .company-info-body-inq {
+    grid-column: 3;
+    grid-row: 1;
+    margin: 0;
+  }
+
+  .map-inq {
+    display: grid;
+    position: relative;
+    grid-template-columns: 48px 600px 1fr;
+    grid-template-rows: 420px;
+    margin-left: 24px;
+  }
+  .map-inq iframe {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /*** inq-environ-info ***/
+  .environ-info-inq {
+    margin: 32px 0 58px 64px;
+    width: 540px;
+  }
+  .environ-info-inq img {
+  }
+
+  /*** inq-personal-info ***/
+  .name-inq {
+    margin-top: 40px;
+    margin-left: 64px
+  }
+  .name-inq .name-kanji-inq {
+    font-family: "Noto Serif JP";
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .name-inq .name-kana-inq {
+    font-family: "Noto Sans JP";
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    margin:  10px 0 0 6px;
+    padding: 0;
+  }
+
+  .container-personal-info-inq {
+    display: grid;
+    grid-template-columns: 40px 300px 1fr 64px;
+    grid-template-rows: auto;
+    grid-column-gap: 24px;
+    margin: 40px auto 0 auto;
+  }
+  .figure-personal-info-inq {
+    grid-column: 2;
+    grid-row: 1;
+    display: block;
+    width: 280px;
+    height: 420px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .figure-personal-info-inq img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 0.5px solid rgba( 64, 64, 64, 0.20 );
+  }
+  .text-personal-info-inq {
+    grid-column: 3;
+    grid-row: 1;
+    margin: -32px auto 0;
+  }
+  .text-personal-info-inq p {
+
+  }
+
+  .text-personal-info-inq ul {
+    margin-left: -16px;
+  }
+  .text-personal-info-inq ul li {
+    line-height: 24px;
+    padding-bottom: 8px;
+  }
+
+  .career-info-inq p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 80px;
+  }
+  .one-career-info-inq {
+    margin-right: 64px;
+    margin-bottom: 18px;
+  }
+  .one-career-info-inq details {
+    display: grid;
+    grid-template-columns: 80px 8fr 1fr;
+    grid-template-rows: 32px auto;
+    margin: 0 16px 24px 80px;
+  }
+  .one-career-info-inq details summary {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+    font-style: "Noto Sans JP";
+    font-size: 22px;
+  }
+  .one-career-info-inq details figure {
+    display: block;
+    grid-column: 2;
+    grid-row: 2;
+    width: auto;
+    overflow: hidden;
+  }
+  .one-career-info-inq details figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .kosokoso-inq {
+    margin: 16px 0 0 0;
+    line-height: 32px;
+  }
+
+  .show-carrer-inq{
+    margin-top: 32px;
+    margin-left: 80px;
+  }
+
+  .hobby-container-inq {
+    margin-left: 80px;
+    padding-right: 64px;
+  }
+  .hobby-hanazono-fig-inq {
+    margin-left: 0;
+    width: 880px;
+    height: 224px;
+    overflow: hidden;
+  }
+  .hobby-hanazono-fig-inq img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*** inq-motto ***/
+  .motto-inq {
+    margin: 64px 0 0 48px;
+  }
+  .motto-inq ul {
+    list-style: none;
+  }
+  .motto-inq ul li {
+    font-family: "Noto Serif JP";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 2.8px;
+    margin-bottom: 40px;
+  }
+
+  .motto-description-inq {
+    margin-top: 64px;
+    margin-left: 32px;
+    margin-bottom: 0;
+  }
+  .motto-description-inq p {
+    margin: 12px 0 18px 0;
+    line-height: 28px;
+  }
+
+  /*+ ===================================== +*/
+  /*+ 主記述部（inq-personal-infoの呼び出し子画面）
+  /** ===================================== +*/
+
+  /*** show-skill ***/
+  .line-container-company-info-show {
+    margin-top: 16px;
+  }
+  .text-company-info-show {
+    margin-right: 16px;
+  }
+  .line-company-info-show {
+    width: 300px;
+  }
+
+  .main-description-show {
+    margin: 0 32px 16px;
+  }
+
+  .main-description-show {
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+
+  .skill-group-show {
+    margin-left: 32px;
+    margin-bottom: 32px;
+  }
+  .skill-kind-show {
+
+  }
+  .skill-kind-show h5 {
+    padding-bottom: 16px;
+    margin: 0;
+  }
+  .skill-set-show {
+    display: grid;
+    grid-template-columns: 16px 320px 160px 1fr;
+    grid-template-rows: 48px;
+    grid-column-gap: 16px;
+    padding: 0 0 12px 0;
+  }
+  .skill-title-show {
+    margin: 0;
+    padding-left: 16px;
+  }
+  .skill-years-show {
+    margin: 0;
+    padding-left: 16px;
+  }
+
+/* end media tablet phone */
+}

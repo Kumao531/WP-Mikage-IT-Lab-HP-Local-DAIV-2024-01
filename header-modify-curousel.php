@@ -3,8 +3,9 @@
 
   <head>
     <meta charset="UTF-8">
-    <!--    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">-->
+<!--    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ミカゲITラボは「トータルシステムコーディネイト」のブランドで、カスタマ・サービスを創造し、ビジネスの流れを作り、業務をデザインし、ITシステムの制作まで行うサービスを提供しています。">
     <title>ミカゲITラボ</title>
 
     <!-- フォント取り込み -->
@@ -19,11 +20,22 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
 
+    <!-- JQueryの読み込み -->
+<!--
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.7.1.min.js"></script>
+-->
+
+    <!-- カルーセル用 -->
+    <!-- slickの読み込み -->
+<!--
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+-->
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/slick-theme.css"/>
+
     <?php wp_head(); ?>
-
   </head>
-
-  <body>
 
     <!-- ビューポート表示 -->
     <div class="viewport-test">
@@ -44,34 +56,44 @@
       </div>
     </div>
 
+
+  <body>
     <!-- ヘッダー -->
-    <header class="header-inq">
+    <header>
 
       <!-- ロゴマーク表示部 -->
-      <div class="trade-mark trade-mark-serv-sub">
+      <div class="trade-mark ">
         <!-- ロゴマーク -->
         <figure class="LogoMark"><img src="<?php echo get_template_directory_uri(); ?>/image/TradeMark/TradeMark.png" alt="トレードマーク" /></figure>
         <p class="LogoText"><span class="LogoTextFig">ミカゲITラボ</span></p>
       </div>
 
-      <!-- スマフォ以外のヘッダーナビゲーション -->
-      <div class="header-nav-show">
-        <span><a href="<?php echo home_url(); ?>/inq-personal-info#call">戻る</a></span>
+      <!-- ヘッダーナビゲーション -->
+      <div class="header-nav">
+        <nav>
+          <ul>
+            <li><a href="<?php echo esc_url(home_url('/')); ?>" rel="home">トップ</a></li>
+            <li><a href="<?php echo home_url(); ?>/company">会社紹介</a></li>
+            <li><a href="<?php echo home_url(); ?>/service">サービス説明</a></li>
+            <li><a href="<?php echo home_url(); ?>/aboutus">About US</a></li>
+            <li><a href="<?php echo home_url(); ?>/inquiry">問い合わせ</a></li>
+          </ul>
+        </nav>
       </div>
 
       <!-- スマフォ専用メニュー画面 -->
-      <div class="hamburger-menu-show">
+      <div class="hamburger-menu">
 
         <!-- ハンバーガーメニュー -->
-        <figure class="menu-toggle-show">
+        <figure class="menu-toggle">
           <img src="<?php echo get_template_directory_uri(); ?>/image/parts/hamburger-menu.png" alt="ハンバーガーメニュー" class="hamburger-bottun" />
         </figure>
 
         <!-- スマフォ用ナビゲーション画面 -->
-        <div class="menu-show">
+        <div class="menu">
 
           <!-- 閉じるボタン -->
-          <figure class="close-button-show">
+          <figure class="close-button">
             <img src="<?php echo get_template_directory_uri(); ?>/image/parts/close-button.png" alt="閉じるボタン" />
           </figure>
 
@@ -80,14 +102,18 @@
             <h3>メニュー</h3>
             <nav>
               <ul>
-                <li><a href="<?php echo home_url(); ?>/inq-personal-info#call">戻る</a></li>
+                <li><a href="<?php echo esc_url(home_url('/')); ?>" rel="home">トップ</a></li>
+                <li><a href="<?php echo home_url(); ?>/company">会社紹介</a></li>
+                <li><a href="<?php echo home_url(); ?>/service">サービス説明</a></li>
+                <li><a href="<?php echo home_url(); ?>/aboutus">About US</a></li>
+                <li><a href="<?php echo home_url(); ?>/inquiry">お問い合わせ</a></li>
               </ul>
             </nav>
           </div>
 
         </div>
 
-        <!-- ここまで：スマフォ専用メニュー画面 -->
+      <!-- ここまで：スマフォ専用メニュー画面 -->
       </div>
 
     </header>

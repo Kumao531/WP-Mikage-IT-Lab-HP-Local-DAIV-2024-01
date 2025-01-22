@@ -35,8 +35,7 @@
               ※ただいまサーバーを移設しているため、このフォームでの連絡は中止しています。<br />お手数ですがメール<br/><spam>accueil@mikage-it-lab.com</spam><br/>宛でご連絡をお願いします。
             </p>
 
-<!--            <form class="form-inquiry" id="myForm" action="/submit" method="post"> -->
-            <form class="form-inquiry" id="myForm">
+            <form class="form-inauiry" id="form-inauiry">
 
               <!-- 名前 -->
               <div id="name" class="oneline-inquery container-inquiry">
@@ -45,7 +44,7 @@
                   <spam class="caution-inquery">※必須</spam>
                 </div>
                 <div class="body-inquiry child-body-inquiry">
-                  <input id="username-obj" type="text" name="username" placeholder="入力してください..." class="contact-textbox" required/>
+                  <input id="username-obj" type="text" name="username" placeholder="入力してください..." class="contact-textbox" />
                 </div>
               </div>
 
@@ -56,7 +55,7 @@
                   <spam class="caution-inquery">※必須</spam>
                 </div>
                 <div class="body-inquiry child-body-inquiry radiobox-inquiry sex-inquiery">
-                  <label class="regtext-small" for="male"><input type="radio" name="sex" value="male" id="male" required>男性　</label>
+                  <label class="regtext-small" for="male"><input type="radio" name="sex" value="male" id="male">男性　</label>
                   <label class="regtext-small" for="email"><input type="radio" name="sex" value="female" id="femail">女性　</label>
                   <label class="regtext-small" for="other-sex"><input type="radio" name="sex" value="other" id="other-sex">その他　</label>
                 </div>
@@ -79,7 +78,7 @@
                   <spam class="caution-inquery">※必須</spam>
                 </div>
                 <div class="body-inquiry child-body-inquiry">
-                  <input id="mail-object" type="text" name="email" size="28" class="contact-textbox" placeholder="username@example.com" required />
+                  <input id="mail-object" type="text" name="email" size="28" class="contact-textbox" placeholder="username@example.com" />
                 </div>
               </div>
 
@@ -91,20 +90,20 @@
                 </div>
                 <div class="body-02-inquiry child-body-02-inquiry checkbox-inquiry">
                   <div class="flex-inquiry regtext-small">
-                    <label for="from-family"><input type="checkbox" name="whereis" value="家族から" id="from-family"> 家族から　　</label>
-                    <label for="from-frend"><input type="checkbox" name="whereis" value="知人から" id="from-frend"> 知人から　　</label>
-                    <label for="word-of-mouth"><input type="checkbox" name="whereis" value="クチコミで" id="word-of-mouth"> クチコミで</label>
+                    <label for="from-family"><input type="checkbox" name="whereis" value="家族" id="from-family"> 家族から　　</label>
+                    <label for="from-frend"><input type="checkbox" name="whereis" value="知人" id="from-frend"> 知人から　　</label>
+                    <label for="word-of-mouth"><input type="checkbox" name="whereis" value="クチコミ" id="word-of-mouth"> クチコミから</label>
                   </div>
                   <div class="flex-inquiry regtext-small">
-                    <label for="search-net"><input type="checkbox" name="whereis" value="ネット検索で" id="search-net"> ネットを検索して　</label>
-                    <label for="net-journal"><input type="checkbox" name="whereis" value="ネット記事から" id="net-journal"> ネットの記事から　</label>
-                    <label for="from-SNS"><input type="checkbox" name="whereis" value="SNSで見かけた" id="from-SNS"> SNSで見かけた　</label><br>
+                    <label for="search-net"><input type="checkbox" name="whereis" value="ネット検索" id="search-net"> ネットを検索して　</label>
+                    <label for="net-journal"><input type="checkbox" name="whereis" value="ネット記事" id="net-journal"> ネットの記事から　</label>
+                    <label for="from-SNS"><input type="checkbox" name="whereis" value="SNS" id="from-SNS"> SNSで見かけた　</label><br>
                     <label for="from-other-site"><input type="checkbox" name="whereis" value="他サイト" id="from-other-site"> ほかのサイトで知った</label>
                   </div>
                   <div class="flex-inquiry regtext-small">
-                    <label for="from-magazine"><input type="checkbox" name="whereis" value="雑誌で見た" id="from-magazine"> 雑誌で見た　　</label>
-                    <label for="from-net-ad"><input type="checkbox" name="whereis" value="ネット広告より" id="from-net-ad"> インターネット広告　　</label>
-                    <label for="from-direct-mail"><input type="checkbox" name="whereis" value="ダイレクトより" id="from-direct-mail"> ダイレクト・メール</label>
+                    <label for="from-magazine"><input type="checkbox" name="whereis" value="雑誌" id="from-magazine"> 雑誌で見た　　</label>
+                    <label for="from-net-ad"><input type="checkbox" name="whereis" value="ネット広告" id="from-net-ad"> インターネット広告　　</label>
+                    <label for="from-direct-mail"><input type="checkbox" name="whereis" value="ダイレクト" id="from-direct-mail"> ダイレクト・メール</label>
                   </div>
                 </div>
               </div>
@@ -116,7 +115,7 @@
                   <spam class="caution-inquery">※必須</spam>
                 </div>
                 <div class="sort-inquiry select-inquiry child-body-inquiry  select-inquiry">
-                  <select id="inquiry-purpose" name="inquiry-purpose" class="selectbox-inquiry" required>
+                  <select id="inquiry-purpose" name="inquiry-purpose" class="selectbox-inquiry">
                     <option value="問合せ">お問い合わせ</option>
                     <option value="要望">ご要望</option>
                     <option value="意見">ご意見</option>
@@ -143,21 +142,19 @@
                   <spam class="caution-inquery"> ※必須200文字以内</spam>
                 </div>
                 <div class="body-02-inquiry child-body-03-inquiry textarea-inquiry">
-                  <textarea id="contact-textarea" placeholder="ご記入ください..." name="inquiry-message" rows="5" maxlength="200" required></textarea>
+                  <textarea id="contact-textarea" placeholder="ご記入ください..." name="inquiry-message" rows="5" maxlength="200"></textarea>
                 </div>
               </div>
 
               <!-- 問合せ送信ボタン -->
               <div id="send-btn">
-                <input id="submit" type="submit" class="inquery-submit-button" onclick="handleSubmit(event)">
+                <input id="submit" type="image" src="<?php echo get_template_directory_uri(); ?>/image/Button/button-send-active.png" alt="送信ボタン" />
               </div>
               <div id="nosend-btn">
-                <img src="<?php echo get_template_directory_uri(); ?>/image/Button/button-send-noactive.png" alt="送信不可ボタン">
+                <img id="no-submit" src="<?php echo get_template_directory_uri(); ?>/image/Button/button-send-noactive.png" alt="送信不可ボタン">
               </div>
 
             </form>
-
-            <div id="errorMessages"></div> <!-- エラーメッセージ表示領域 -->
 
           </div>
 

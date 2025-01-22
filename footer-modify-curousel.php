@@ -11,7 +11,7 @@
               <li><a href="<?php echo home_url(); ?>/company">会社紹介</a></li>
               <li><a href="<?php echo home_url(); ?>/service">サービス説明</a></li>
               <li><a href="<?php echo home_url(); ?>/aboutus">About US</a></li>
-              <li><a href="<?php echo home_url(); ?>/inquiry-cf7">お問い合わせ</a></li>
+              <li><a href="<?php echo home_url(); ?>/inquiry">お問い合わせ</a></li>
             </ul>
           </nav>
         </div>
@@ -27,10 +27,9 @@
         <div class="footer-telmail">
           <h3 class="footer-title">電話・Eメール</h3>
           <p class="footer-text">
-            （緊急時）Tel: 090-2454-2518<br/>
+            Tel: 090-2454-2518<br/>
             Email:<br/>
-            accueil@mikage-it-lab.com<br>
-            本サイトの「問い合わせ」が<br>便利です。
+            accueil@mikage-it-lab.com
           </p>
         </div>
         <!-- 営業時間 -->
@@ -51,7 +50,13 @@
     </footer>
 
     <!-- カルーセルモジュール slick 読み込み -->
+<!--
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+-->
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-migrate-3.4.0.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/slick.min.js"></script>
+
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/script.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/script-inquiry.js"></script>

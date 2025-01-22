@@ -36,7 +36,7 @@
                 IT界のノーベル賞であるシャノン賞を受賞した<a href="https://ja.wikipedia.org/wiki/%E5%B5%A9%E5%BF%A0%E9%9B%84"><span
                     style="font-weight:600;color:mediumblue;">嵩忠雄教授</span></a>に
                 師事する。<br>
-                研究テーマにおいては、システム化する仕事の内容が把握しづらく、プログラムの作りを
+                　研究テーマは、システム化する仕事の内容が把握しづらく、プログラムの作りを
                 完全に文章化することが難しいときでも、
                 未完である仕様書をそのままコンピュータで実行できる仕組みを創り出し、
                 この分野で世界初の商用システムを稼働させる。</p>
@@ -87,13 +87,6 @@
               <p class="regtext">東京大学松尾研究室の学外研究機関で機械学習とニューラルネットワークを学ぶ。<br>機械学習システムの開発/実行基盤を開発。</p>
 
               <p class="regtext">その後退職し、自ら会社を興すことを決意する。</p>
-
-              <p class="regtext">
-                ソフトウェア制作法人の起業企画を行う。<br>
-                レスポンシブ対応でモバイル/タブレット/デスクトップ向けのWebサイトを開発。<br>
-                WordPressにおいてカスタムテーマを取扱う。<br>
-                Adobe Illustrator・Photoshop、Figma等を用いてWebデザインも行っている。
-              </p>
             </div>
 
           </div>
@@ -129,7 +122,7 @@
             <div class="meisai">
               <details>
                 <summary><span style="color: #c41d1d;font-weight:600;">(now!)Web制作 </span></summary>
-                <p class="regtext">
+                <p class="regtext-small">
                   HTML5とCSS3。またJavaScriptなどを用いてWebサイトの開発をしています。<br>
                   メディアクエリ、Flex Flow、Grid Layoutを用いてレスポンシブWeb対応ができます。<br>
                   WordPressでのカスタムテンプレートの対応も行っています。<br>
@@ -145,15 +138,15 @@
                   経営コンサル&SI企業において、新たなIT教育サービスを起こすための事業企画
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-01.png" alt="教育事業の企画立案" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-01.png" alt="教育事業の企画立案" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>経営コンサル&SI企業において、新たなIT教育サービスを起こすための事業企画</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-01.png" alt="教育事業の企画立案" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-01.png" alt="教育事業の企画立案" />
               </details>
             </div>
 
@@ -164,15 +157,15 @@
                   AIによるシステム改修工数予測の精度更新
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-02.png" alt="AIによるシステム改修工数予想精度の更新" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-02.png" alt="AIによるシステム改修工数予想精度の更新" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>AIによるシステム改修工数予測の精度更新</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-02.png" alt="AIによるシステム改修工数予想精度の更新" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-02.png" alt="AIによるシステム改修工数予想精度の更新" />
               </details>
             </div>
 
@@ -183,15 +176,15 @@
                   AI機械学習プラットフォームの構築
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-03.png" alt="AI機械学習プラットフォームの構築" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-03.png" alt="AI機械学習プラットフォームの構築" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>AI機械学習プラットフォームの構築</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-03.png" alt="AI機械学習プラットフォームの構築" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-03.png" alt="AI機械学習プラットフォームの構築" />
               </details>
             </div>
 
@@ -202,15 +195,15 @@
                   超大規模システム構築を行えるSIerの教育
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-04.png" alt="超大規模システム構築を行えるSIerの教育" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-04.png" alt="超大規模システム構築を行えるSIerの教育" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>超大規模システム構築を行えるSIerの教育</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-04.png" alt="超大規模システム構築を行えるSIerの教育" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-04.png" alt="超大規模システム構築を行えるSIerの教育" />
               </details>
             </div>
 
@@ -221,15 +214,15 @@
                   グループ社員14,000名が順守すべきシステム開発プロセスの社内規定を策定
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-05.png" alt="グループ社員14,000名が順守すべきシステム開発プロセスの社内規定を策定" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-05.png" alt="グループ社員14,000名が順守すべきシステム開発プロセスの社内規定を策定" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>グループ社員14,000名が順守すべきシステム開発プロセスの社内規定を策定</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-05.png" alt="グループ社員14,000名が順守すべきシステム開発プロセスの社内規定を策定" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-05.png" alt="グループ社員14,000名が順守すべきシステム開発プロセスの社内規定を策定" />
               </details>
             </div>
 
@@ -240,15 +233,15 @@
                   野村総研の新任～３年次SIer教育の主任責任者
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-06.png" alt="野村総研の新任～３年次SIer教育の主任責任者" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-06.png" alt="野村総研の新任～３年次SIer教育の主任責任者" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>野村総研の新任～３年次SIer教育の主任責任者</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-06.png" alt="野村総研の新任～３年次SIer教育の主任責任者" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-06.png" alt="野村総研の新任～３年次SIer教育の主任責任者" />
               </details>
             </div>
 
@@ -259,15 +252,15 @@
                   システム構築成熟度のCMMI Level 2対応
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-07.png" alt="システム構築成熟度のCMMI Level 2対応" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-07.png" alt="システム構築成熟度のCMMI Level 2対応" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>システム構築成熟度のCMMI Level 2対応</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-07.png" alt="システム構築成熟度のCMMI Level 2対応" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-07.png" alt="システム構築成熟度のCMMI Level 2対応" />
               </details>
             </div>
 
@@ -278,15 +271,15 @@
                   商用Javaライブラリ集の開発責任者
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-08.png" alt="商用Javaライブラリ集の開発責任者" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-08.png" alt="商用Javaライブラリ集の開発責任者" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>商用Javaライブラリ集の開発責任者</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-08.png" alt="商用Javaライブラリ集の開発責任者" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-08.png" alt="商用Javaライブラリ集の開発責任者" />
               </details>
             </div>
 
@@ -297,15 +290,15 @@
                   エネルギー業界首位と五位合併時：クレジット業務の設計と処理システムの構築マネージャ
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-09.png" alt="エネルギー業界首位と五位合併時：クレジット業務の設計と処理システムの構築マネージャ" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-09.png" alt="エネルギー業界首位と五位合併時：クレジット業務の設計と処理システムの構築マネージャ" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>エネルギー業界首位と五位合併時：クレジット業務の設計と処理システムの構築マネージャ</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-09.png" alt="エネルギー業界首位と五位合併時：クレジット業務の設計と処理システムの構築マネージャ" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-09.png" alt="エネルギー業界首位と五位合併時：クレジット業務の設計と処理システムの構築マネージャ" />
               </details>
             </div>
 
@@ -316,15 +309,15 @@
                   建設デベロッパー五位：可搬型会計システムのプロジェクト完遂責任者
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-10.png" alt="建設デベロッパー五位：可搬型会計システムのプロジェクト完遂責任者" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-10.png" alt="建設デベロッパー五位：可搬型会計システムのプロジェクト完遂責任者" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>建設デベロッパー五位：可搬型会計システムのプロジェクト完遂責任者</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-10.png" alt="建設デベロッパー五位：可搬型会計システムのプロジェクト完遂責任者" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-10.png" alt="建設デベロッパー五位：可搬型会計システムのプロジェクト完遂責任者" />
               </details>
             </div>
 
@@ -335,15 +328,15 @@
                   ビジネス機器商社五位：主幹商品の全国監視システムの開発・保守リーダー
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-11.png" alt="ビジネス機器商社五位：主幹商品の全国監視システムの開発・保守リーダー" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-11.png" alt="ビジネス機器商社五位：主幹商品の全国監視システムの開発・保守リーダー" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>ビジネス機器商社五位：主幹商品の全国監視システムの開発・保守リーダー</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-11.png" alt="ビジネス機器商社五位：主幹商品の全国監視システムの開発・保守リーダー" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-11.png" alt="ビジネス機器商社五位：主幹商品の全国監視システムの開発・保守リーダー" />
               </details>
             </div>
 
@@ -354,15 +347,15 @@
                   世界２位広告代理店の日本法人：広告制作提案システムのＰＯＣ技術支援リーダー
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-12.png" alt="世界２位広告代理店の日本法人：広告制作提案システムのＰＯＣ技術支援リーダー" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-12.png" alt="世界２位広告代理店の日本法人：広告制作提案システムのＰＯＣ技術支援リーダー" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>世界２位広告代理店の日本法人：広告制作提案システムのＰＯＣ技術支援リーダー</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-12.png" alt="世界２位広告代理店の日本法人：広告制作提案システムのＰＯＣ技術支援リーダー" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-12.png" alt="世界２位広告代理店の日本法人：広告制作提案システムのＰＯＣ技術支援リーダー" />
               </details>
             </div>
 
@@ -373,15 +366,15 @@
                   小売スーパー首位：2000年問題対応のシステム改修プロジェクトマネージャ
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-13.png" alt="小売スーパー首位：2000年問題対応のシステム改修プロジェクトマネージャ" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-13.png" alt="小売スーパー首位：2000年問題対応のシステム改修プロジェクトマネージャ" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>小売スーパー首位：2000年問題対応のシステム改修プロジェクトマネージャ</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-13.png" alt="小売スーパー首位：2000年問題対応のシステム改修プロジェクトマネージャ" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-13.png" alt="小売スーパー首位：2000年問題対応のシステム改修プロジェクトマネージャ" />
               </details>
             </div>
 
@@ -392,15 +385,15 @@
                   労働省管轄下の人材斡旋機構：シェア80%の全業務を支援するプロダクトの新製品開発リーダー
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-14.png" alt="労働省管轄下の人材斡旋機構：シェア80%の全業務を支援するプロダクトの新製品開発リーダー" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-14.png" alt="労働省管轄下の人材斡旋機構：シェア80%の全業務を支援するプロダクトの新製品開発リーダー" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>労働省管轄下の人材斡旋機構：シェア80%の全業務を支援するプロダクトの新製品開発リーダー</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-14.png" alt="労働省管轄下の人材斡旋機構：シェア80%の全業務を支援するプロダクトの新製品開発リーダー" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-14.png" alt="労働省管轄下の人材斡旋機構：シェア80%の全業務を支援するプロダクトの新製品開発リーダー" />
               </details>
             </div>
 
@@ -411,15 +404,15 @@
                   厚生省管轄下の人材斡旋機構：看護人材斡旋のシステム刷新開発のRDBデータ移行責任者
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-15.png" alt="厚生省管轄下の人材斡旋機構：看護人材斡旋のシステム刷新開発のRDBデータ移行責任者" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-15.png" alt="厚生省管轄下の人材斡旋機構：看護人材斡旋のシステム刷新開発のRDBデータ移行責任者" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>厚生省管轄下の人材斡旋機構：看護人材斡旋のシステム刷新開発のRDBデータ移行責任者</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-15.png" alt="厚生省管轄下の人材斡旋機構：看護人材斡旋のシステム刷新開発のRDBデータ移行責任者" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-15.png" alt="厚生省管轄下の人材斡旋機構：看護人材斡旋のシステム刷新開発のRDBデータ移行責任者" />
               </details>
             </div>
 
@@ -430,15 +423,15 @@
                   証券会社首位：投資信託の売買と約定を管理する機能のダウンサイジングと高速化を実現する技術開発リーダー
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-16.png" alt="証券会社首位：投資信託の売買と約定を管理する機能のダウンサイジングと高速化を実現する技術開発リーダー" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-16.png" alt="証券会社首位：投資信託の売買と約定を管理する機能のダウンサイジングと高速化を実現する技術開発リーダー" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>証券会社首位：投資信託の売買と約定を管理する機能のダウンサイジングと高速化を実現する技術開発リーダー</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-16.png" alt="証券会社首位：投資信託の売買と約定を管理する機能のダウンサイジングと高速化を実現する技術開発リーダー" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-16.png" alt="証券会社首位：投資信託の売買と約定を管理する機能のダウンサイジングと高速化を実現する技術開発リーダー" />
               </details>
             </div>
 
@@ -449,15 +442,15 @@
                   証券界、生保・損保界、流通小売業界、非製造産業界、公共など、同一のコンセプトでシステム構築を行える開発基盤を創案。<br>　プロジェクトの企画・開発・展開の責任者、商用プロダクトオーナー
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-17.png" alt="証券界、生保・損保界、流通小売業界、非製造産業界、公共など、同一のコンセプトでシステム構築を行える開発基盤を創案。<br>　プロジェクトの企画・開発・展開の責任者、商用プロダクトオーナー" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-17.png" alt="証券界、生保・損保界、流通小売業界、非製造産業界、公共など、同一のコンセプトでシステム構築を行える開発基盤を創案。<br>　プロジェクトの企画・開発・展開の責任者、商用プロダクトオーナー" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>証券界、生保・損保界、流通小売業界、非製造産業界、公共など、同一のコンセプトでシステム構築を行える<br>　開発基盤を創案。<br>　プロジェクトの企画・開発・展開の責任者、商用プロダクトオーナー</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-17.png" alt="証券界、生保・損保界、流通小売業界、非製造産業界、公共など、同一のコンセプトでシステム構築を行える開発基盤を創案。<br>　プロジェクトの企画・開発・展開の責任者、商用プロダクトオーナー" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-17.png" alt="証券界、生保・損保界、流通小売業界、非製造産業界、公共など、同一のコンセプトでシステム構築を行える開発基盤を創案。<br>　プロジェクトの企画・開発・展開の責任者、商用プロダクトオーナー" />
               </details>
             </div>
 
@@ -468,16 +461,16 @@
                   日本初の商用広域クライアント・サーバー基盤の開発において、サーバー機のアプリ基盤を開発するテクニカルエンジニア
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-19.png"
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-19.png"
                     alt="日本初の商用広域クライアント・サーバー基盤の開発において、サーバー機のアプリ基盤を開発するテクニカルエンジニア" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>日本初の商用広域クライアント・サーバー基盤の開発において、サーバー機のアプリ基盤を開発する<br>　テクニカルエンジニア</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-19.png"
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-19.png"
                     alt="日本初の商用広域クライアント・サーバー基盤の開発において、サーバー機のアプリ基盤を開発するテクニカルエンジニア" />
               </details>
             </div>
@@ -489,16 +482,16 @@
                   業界や業界大手への営業支援コンサルテーションにおいて、実証実験システムの設計・開発を担当
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-20.png"
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-20.png"
                     alt="業界や業界大手への営業支援コンサルテーションにおいて、実証実験システムの設計・開発を担当" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>業界大手の営業支援コンサルテーションにおいて、実証実験システムの設計・開発を担当</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-20.png"
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-20.png"
                     alt="業界大手の営業支援コンサルテーションにおいて、実証実験システムの設計・開発を担当" />
               </details>
             </div>
@@ -510,15 +503,15 @@
                   関西某地銀：融資審査部門へ「未完な業務仕様でも動作できるシステム」を稼働させる。IT学術分野で世界初の実用商用システムとなる
                 </summary>
                 <figure>
-                  <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-20.png" alt="関西某地銀：融資審査部門へ「未完な業務仕様でも動作できるシステム」を稼働させる。IT学術分野で世界初の実用商用システムとなる" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-20.png" alt="関西某地銀：融資審査部門へ「未完な業務仕様でも動作できるシステム」を稼働させる。IT学術分野で世界初の実用商用システムとなる" />
                 </figure>
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>関西某地銀：融資審査部門へ「未完な業務仕様でも動作できるシステム」を稼働させる。<br>　IT学術分野で世界初の実用商用システムとなる</summary>
-                <img src="<?php echo get_template_directory_uri(); ?>/image/MyWorkings-20.png" alt="関西某地銀：融資審査部門へ「未完な業務仕様でも動作できるシステム」を稼働させる。<br>　IT学術分野で世界初の実用商用システムとなる" />
+                <img src="<?php echo get_template_directory_uri(); ?>/image/aboutUS/project/MyWorkings-20.png" alt="関西某地銀：融資審査部門へ「未完な業務仕様でも動作できるシステム」を稼働させる。<br>　IT学術分野で世界初の実用商用システムとなる" />
               </details>
             </div>
 
@@ -540,7 +533,7 @@
               </details>
             </div>
             -->
-            <div class="meisai" class="regtext">
+            <div class="meisai">
               <details>
                 <summary>（その他）知的資産流通を目的とした汎用蓄積モデルを制定するための国際規格へ参画（個人的に）</summary>
                 <p>オブジェクト指向の国際団体ＯＭＧ（Object Management Group、 UMLやBPMなどの規格を行っている団体）の<br>ＲＡＳ（Reusable Asset Specification）規格化に参画。<br>日本側での規格の後半部分をともに草案したEJBコンソーシアムのワーキンググループの皆様に感謝します。<br>会社はＯＭＧを脱会して非会員だったから手弁当でした...<br>

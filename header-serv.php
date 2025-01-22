@@ -31,13 +31,13 @@
       </figure>
       <div class="Responsive-Message">
         <div class="ResponsiveSP">
-          <span>For ( <strong style="color:#d8de88;">Phone</strong> , Tablet , PC )</span>
+          <span>For ( <strong style="color:greenyellow;">Phone</strong> , Tablet , PC )</span>
         </div>
         <div class="ResponsiveTB">
-          <span>For ( Phone , <strong style="color:#d8de88;">Tablet</strong> , PC )</span>
+          <span>For ( Phone , <strong style="color:greenyellow;">Tablet</strong> , PC )</span>
         </div>
         <div class="ResponsivePC">
-          <span>For ( Phone , Tablet , <strong style="color:#d8de88;">PC</strong> )</span>
+          <span>For ( Phone , Tablet , <strong style="color:greenyellow;">PC</strong> )</span>
         </div>
       </div>
     </div>

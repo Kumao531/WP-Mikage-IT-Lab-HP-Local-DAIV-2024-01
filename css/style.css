@@ -1,6 +1,6 @@
 .viewport-test {
   display: grid;
-  grid-template-columns: 0.5fr 6fr 20fr 6fr 0.5fr;
+  grid-template-columns: 12px 174px 1fr 180px 12px;
   grid-template-rows: 24px;
   height: 20px;
   width: 100%;
@@ -30,6 +30,7 @@
 .Responsive-Message {
   grid-column: 4;
   grid-row: 1;
+  font-size: 12px;
   margin: 0;
   padding: 4px 0 0 0;
   align-items: center;
@@ -48,6 +49,7 @@
   object-fit: fill;
 }
 .powered-by {
+  font-size: 12px;
   color: #efe4e4;
 }
 
@@ -63,7 +65,7 @@ body {
   background-color: rgba(105, 175, 255, 0.20);
 }
 
-span {
+spam {
   white-space: nowrap;
 }
 
@@ -784,7 +786,7 @@ main {
   letter-spacing: 2.0px;
   font-style: italic;
   font-weight: 600;
-  padding: 0 24px;
+  padding: 0 8px;
   margin-bottom: 24px;
 }
 
@@ -963,7 +965,6 @@ main {
   color: #7A2972;
 }
 
-/*AAA*/
 /*+++ カルーセル構成 +++*/
 /* カルーセル図全対枠 */
 .curousel-box {
@@ -1508,17 +1509,297 @@ main {
   color: #181818;
 }
 
-/*+++ 主記述部 +++*/
-.main-description-inquiry {
+/********************************
+/* Contact Form 7 (inquily-cf7)用
+/*******************************/
+/*AAA*/
+/*+++ タイトル行の定義 +++*/
+.cf7-h3-title {
+  display: flex;
+  width: 95%;
+  height: 30px;
+  align-items: center;
+  white-space: nowrap;
   margin-top: 24px;
+  margin-bottom: 48px;
+  overflow: hidden;
+}
+.cf7-h3-title .h3 {
+  display: block;
+  height: 30px;
+}
+.cf7-h3-title .h3 h3 {
+  height: 30px;
+  margin: 0;
+  padding: 0;
+}
+.cf7-slash {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-left: 8px;
+  border-bottom: 3px solid rgba(46, 8, 214, 0.626);
 }
 
-.caution-inquery {
-  font-family: "Noto Sans Jp";
+/*+++ フォームの構造の定義 +++*/
+
+.cf7-yourname-container,
+.cf7-yoursex-container,
+.cf7-yourtel-container,
+.cf7-yourmail-container {
+  display: grid;
+  grid-template-columns: 0px 320px 1fr;
+  grid-template-rows: 48px 48px 32px;
+  grid-row-gap: 3px;
+}
+.cf7-yourname-title,
+.cf7-yoursex-title,
+.cf7-yourtel-title,
+.cf7-yourmail-title {
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+}
+.cf7-yourname-item,
+.cf7-yoursex-item,
+.cf7-yourtel-item,
+.cf7-yourmail-item,
+.cf7-checkbox-item {
+  display: block;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.cf7-checkbox-container {
+  display: grid;
+  grid-template-columns: 0px 320px 1fr;
+  grid-template-rows: 64px auto 72px;
+  grid-row-gap: 2px;
+}
+.cf7-checkbox-title {
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+}
+.cf7-checkbox {
+  display: block;
+  grid-column: 2;
+  grid-row: 2;
+}
+.cf7-checkbox-field {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cf7-select-container {
+  display: grid;
+  grid-template-columns: 0px 320px 1fr;
+  grid-template-rows: 64px 48px 40px;
+  grid-row-gap: 3px;
+}
+.cf7-select-title {
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+}
+.cf7-select-item {
+  display: block;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.cf7-other-container {
+  display: grid;
+  grid-template-columns: 40px 280px 1fr;
+  grid-template-rows: 64px 48px 32px;
+  grid-row-gap: 3px;
+}
+.cf7-other-title {
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+}
+.cf7-other-item {
+  display: block;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.cf7-message-container {
+  display: grid;
+  grid-template-columns: 0px 320px 1fr;
+  grid-template-rows: 48px auto 32px;
+  grid-row-gap: 2px;
+}
+.cf7-message-title {
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+}
+.cf7-message-item {
+  display: block;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* 項目の背景色の設定　*/
+
+.cf7-yourname-title,
+.cf7-yoursex-title,
+.cf7-yourtel-title,
+.cf7-yourmail-title,
+.cf7-checkbox-title,
+.cf7-select-title,
+.cf7-other-title,
+.cf7-message-title {
+  background-color: rgba(184, 165, 253, 0.4);
+  border-bottom: 2px solid rgba(142, 142, 142, 0.50);
+}
+
+.cf7-yourname-item,
+.cf7-yoursex-item,
+.cf7-yourtel-item,
+.cf7-yourmail-item,
+.cf7-checkbox-item,
+.cf7-select-item,
+.cf7-other-item,
+.cf7-message-item {
+  background-color: rgba(255, 251, 182, 0.4);
+  border-bottom: 2px solid rgba(142, 142, 142, 0.50);
+}
+
+/* cf7の入力フィールドのサイズの調整 */
+
+.cf7-input-text-field {
+  width: 300px;
+  height: 32px;
+}
+
+.cf7-checkbox-field {
+  line-height: 48px;
+}
+
+.cf7-input-other-text-field {
+  width: 260px;
+  height: 32px;
+}
+
+/* タイトルやcf7フィールドの位置の調整 */
+.cf7-input-text-field {
+  display: block;
+  position: relative;
+  margin-top: -9px;
+  margin-left: 8px;
+}
+
+.cf7-radio-field {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+}
+
+.cf7-select-field {
+  display: block;
+  position: relative;
+  margin-top: -6px;
+  margin-left: 8px;
+}
+
+.cf7-input-other-text-field {
+  display: block;
+  position: relative;
+  margin-top: -9px;
+  margin-left: 8px;
+}
+
+.textarea-field {
+  display: block;
+  position: relative;
+  margin-left: 10px;
+}
+
+.cf7-yourname-title P,
+.cf7-yoursex-title p,
+.cf7-yourtel-title p,
+.cf7-yourmail-title p,
+.cf7-checkbox-title p,
+.cf7-select-title p,
+.cf7-other-title p,
+.cf7-message-title p {
+  display: block;
+  position: relative;
+  margin-top: 8px;
+  padding-left: 8px;
+}
+
+/* フォントの調整 *//*AAA*/
+.cf7-regtext {
+  font-family: "Noto Sans JP";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 2.2px;
+  color: #181818;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+.cf7-regtext-small {
+  font-family: "Noto Sans JP";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 2.0px;
+  color: #181818;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+.cf7-reauired {
+  font-family: "Noto Sans JP";
   font-size: 12px;
   font-weight: 600;
   line-height: 12px;
   letter-spacing: 1.2px;
+  vertical-align: super;
+  color: #e61111;
+}
+
+/*+++ メッセージ送信ボタン +++*/
+.cf7-submit input[type="submit"] {
+  font-family: "Noto Sans SP";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 2.0px;
+  width: 240px;
+  height: 54px;
+  margin-bottom: 24px;
+  color: #ecf4bf;
+  background-color: #3b0caa;
+  border-radius: 28px;
+}
+.cf7-submit input[type="submit"]:hover {
+  color: #3b0caa;
+  background-color: rgba(219, 255, 17, 0.40);
+}
+
+/*** cf7 ここまで ***************/
+
+/*+++ 主記述部 +++*/
+.main-description-inquiry {
+  margin-top: 24px;
+  margin-left: 8px;
+}
+
+.caution-inquery {
+  font-family: "Noto Sans Jp";
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 9px;
+  letter-spacing: 0.9px;
   vertical-align: super;
   color: #e61111;
 }
@@ -1648,7 +1929,8 @@ main {
   width: 99%;
 }
 
-#send-btn,
+/* ボタンの設定と制御 */
+
 #nosend-btn {
   padding: 4px 8px;
   margin-top: 32px;
@@ -1658,19 +1940,30 @@ main {
   height: 40px;
   overflow: hidden;
 }
-#send-btn input {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 #nosend-btn img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+.inquery-submit-button {
+  background-image: url('http://mikage-it-lab.local/wp-content/uploads/2024/06/button-send-active.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  width: 135px;
+  height: 44px;
+  cursor: pointer;
+  text-indent: -9999px;
+}
 #send-btn {
   display: none;
+}
+
+#errorMessages {
+  font-family: "Noto Sans JP";
+  font-weight: 600;
+  color: #ff5151;
 }
 
 /*+ ===================================== +*/
@@ -1747,17 +2040,19 @@ main {
 
 .ul-serv-sub {
   margin: 0;
-  padding-top: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .ul-serv-sub li {
   font-style: "Noto Serif JP";
   font-size: 16px;
-  line-height: 16px;
+  line-height: 22px;
   letter-spacing: 1.6px;
   margin-left:8px;
   margin-bottom: 8px;
   color: #181818;
 }
+
 
 /*+ ===================================== +*/
 /*+ 主記述部（aboutusの呼び出し子画面）
@@ -1931,6 +2226,7 @@ main {
   margin-left: 8px;
 }
 
+/*
 .one-career-info-inq {
   line-height: 24px;
   margin-bottom: 14px;
@@ -1951,6 +2247,24 @@ main {
 .career-container-inq figure {
   display: none;
 }
+*/
+.meisai {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 1rem 0 0.5rem 2.0rem;
+  padding: 0 0 0 0;
+}
+.meisai > details > img {
+  display: none;
+  width: 100%;
+}
+#kosokoso {
+  display: none;
+  margin: 0.5rem 0 0 2.0rem;
+  line-height: 1.6rem;
+}
+
 .career-notes-sp {
   display: block;
 }
@@ -2620,7 +2934,6 @@ main {
     letter-spacing: 2.0px;
   }
 
-  /*AAA*/
   /*+++ カルーセル構成 +++*/
   /* カルーセル図全対枠 */
   .curousel-box{
@@ -2934,6 +3247,286 @@ main {
   }
   .trademark-aboutus div img {
   }
+
+  /********************************
+  /* Contact Form 7 (inquily-cf7)用
+  /*******************************/
+  /*AAA*/
+  /*+++ タイトル行の定義 +++*/
+  .cf7-h3-title {
+    display: flex;
+    width: 540px;
+    height: 28px;
+    align-items: center;
+    white-space: nowrap;
+    margin-top: 28px;
+    margin-bottom: 56px;
+    overflow: hidden;
+  }
+  .cf7-h3-title .h3 {
+    display: block;
+    height: 28px;
+  }
+  .cf7-h3-title .h3 h3 {
+    height: 28px;
+    margin: 0;
+    padding: 0;
+  }
+  .cf7-slash {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-left: 8px;
+    border-bottom: 3px solid rgba(46, 8, 214, 0.626);
+  }
+
+  /*+++ フォームの構造の定義 +++*/
+
+  .cf7-yourname-container,
+  .cf7-yoursex-container,
+  .cf7-yourtel-container,
+  .cf7-yourmail-container {
+    display: grid;
+    grid-template-columns: 0px 320px 320px 1fr;
+    grid-template-rows: 48px 40px;
+    grid-column-gap: 24px;
+  }
+  .cf7-yourname-title,
+  .cf7-yoursex-title,
+  .cf7-yourtel-title,
+  .cf7-yourmail-title {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .cf7-yourname-item,
+  .cf7-yoursex-item,
+  .cf7-yourtel-item,
+  .cf7-yourmail-item,
+  .cf7-checkbox-item {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .cf7-checkbox-container {
+    display: grid;
+    grid-template-columns: 0px 320px 320px 1fr;
+    grid-template-rows: auto 40px;
+    grid-column-gap: 24px;
+  }
+  .cf7-checkbox-title {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .cf7-checkbox {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .cf7-checkbox-field {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cf7-select-container {
+    display: grid;
+    grid-template-columns: 0px 320px 320px 1fr;
+    grid-template-rows: 64px 3px;
+    grid-column-gap: 24px;
+  }
+  .cf7-select-title {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .cf7-select-item {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .cf7-other-container {
+    display: grid;
+    grid-template-columns: 40px 280px 320px 1fr;
+    grid-template-rows: 64px 40px;
+    grid-column-gap: 24px;
+  }
+  .cf7-other-title {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .cf7-other-item {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .cf7-message-container {
+    display: grid;
+    grid-template-columns: 0px 320px 320px 1fr;
+    grid-template-rows: auto 40px;
+    grid-column-gap: 24px;
+  }
+  .cf7-message-title {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .cf7-message-item {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  /* 項目の背景色の設定　*/
+
+  .cf7-yourname-title,
+  .cf7-yoursex-title,
+  .cf7-yourtel-title,
+  .cf7-yourmail-title,
+  .cf7-checkbox-title,
+  .cf7-select-title,
+  .cf7-other-title,
+  .cf7-message-title {
+    background-color: rgba(184, 165, 253, 0.4);
+    border-bottom: 2px solid rgba(142, 142, 142, 0.50);
+  }
+
+  .cf7-yourname-item,
+  .cf7-yoursex-item,
+  .cf7-yourtel-item,
+  .cf7-yourmail-item,
+  .cf7-checkbox-item,
+  .cf7-select-item,
+  .cf7-other-item,
+  .cf7-message-item {
+    background-color: rgba(255, 251, 182, 0.4);
+    border-bottom: 2px solid rgba(142, 142, 142, 0.50);
+  }
+
+  /* cf7の入力フィールドのサイズの調整 */
+
+  .cf7-input-text-field {
+    width: 300px;
+    height: 32px;
+  }
+
+  .cf7-checkbox-field {
+    line-height: 48px;
+  }
+
+  .cf7-input-other-text-field {
+    width: 260px;
+    height: 32px;
+  }
+
+  /* タイトルやcf7フィールドの位置の調整 */
+  .cf7-input-text-field {
+    display: block;
+    position: relative;
+    margin-top: -9px;
+    margin-left: 8px;
+  }
+
+  .cf7-radio-field {
+    display: block;
+    position: relative;
+    margin-top: 4px;
+  }
+
+  .cf7-select-field {
+    display: block;
+    position: relative;
+    margin-top: -6px;
+    margin-left: 8px;
+  }
+
+  .cf7-input-other-text-field {
+    display: block;
+    position: relative;
+    margin-top: -9px;
+    margin-left: 8px;
+  }
+
+  .textarea-field {
+    display: block;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .cf7-yourname-title P,
+  .cf7-yoursex-title p,
+  .cf7-yourtel-title p,
+  .cf7-yourmail-title p,
+  .cf7-checkbox-title p,
+  .cf7-select-title p,
+  .cf7-other-title p,
+  .cf7-message-title p {
+    display: block;
+    position: relative;
+    margin-top: 8px;
+    padding-left: 8px;
+  }
+
+  /* フォントの調整 *//*AAA*/
+  .cf7-regtext {
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 3.4px;
+    color: #181818;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  }
+
+  .cf7-regtext-small {
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 2.0px;
+    color: #181818;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  }
+
+  .cf7-reauired {
+    font-family: "Noto Sans JP";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 1.2px;
+    vertical-align: super;
+    color: #e61111;
+  }
+
+  /*+++ メッセージ送信ボタン +++*/
+  .cf7-submit input[type="submit"] {
+    font-family: "Noto Sans SP";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 2.0px;
+    width: 240px;
+    height: 54px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    color: #ecf4bf;
+    background-color: #3b0caa;
+    border-radius: 28px;
+  }
+  .cf7-submit input[type="submit"]:hover {
+    color: #3b0caa;
+    background-color: rgba(219, 255, 17, 0.40);
+  }
+
+  /*** cf7 ここまで ***************/
 
   /*+ ===================================== +*/
   /*+ 主記述部（inquiry）
@@ -3318,6 +3911,7 @@ main {
     padding-bottom: 8px;
   }
 
+  /*
   .career-info-inq p {
     font-size: 18px;
     line-height: 26px;
@@ -3351,6 +3945,7 @@ main {
     height: 100%;
     object-fit: contain;
   }
+
   .career-container-inq figure {
     display: block;
   }
@@ -3369,6 +3964,24 @@ main {
     display: block;
     margin: 16px 0 0 0;
     line-height: 26px;
+  }
+  */
+
+  .meisai {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 1rem 0 0.5rem 2.0rem;
+    padding: 0 0 0 0;
+  }
+  .meisai > details > img {
+    display: block;
+    width: 100%;
+  }
+  #kosokoso {
+    display: block;
+    margin: 0.5rem 0 0 2.0rem;
+    line-height: 1.6rem;
   }
 
   .show-carrer-inq{
@@ -3488,6 +4101,7 @@ main {
     background-color: rgb(120, 105, 173, 0.2);
     border-radius: 12px;
   }
+
 
 /* end media tablet phone */
 }
@@ -4016,6 +4630,290 @@ main {
   .trademark-aboutus div img {
   }
 
+  /********************************
+  /* Contact Form 7 (inquily-cf7)用
+  /*******************************/
+  /*AAA*/
+  /*+++ タイトル行の定義 +++*/
+  .cf7-h3-title {
+    display: flex;
+    width: 600px;
+    height: 40px;
+    align-items: center;
+    white-space: nowrap;
+    margin-top: 28px;
+    margin-bottom: 56px;
+    overflow: hidden;
+  }
+  .cf7-h3-title .h3 {
+    display: block;
+    height: 40px;
+  }
+  .cf7-h3-title .h3 h3 {
+    height: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  .cf7-slash {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-left: 8px;
+    border-bottom: 3px solid rgba(46, 8, 214, 0.626);
+  }
+
+  /*+++ フォームの構造の定義 +++*/
+  .cf7-container {
+    margin-top: 32px;
+    margin-left: 40px;
+  }
+
+  .cf7-yourname-container,
+  .cf7-yoursex-container,
+  .cf7-yourtel-container,
+  .cf7-yourmail-container {
+    display: grid;
+    grid-template-columns: 40px 320px 320px 1fr;
+    grid-template-rows: 48px 40px;
+    grid-column-gap: 24px;
+  }
+  .cf7-yourname-title,
+  .cf7-yoursex-title,
+  .cf7-yourtel-title,
+  .cf7-yourmail-title {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .cf7-yourname-item,
+  .cf7-yoursex-item,
+  .cf7-yourtel-item,
+  .cf7-yourmail-item,
+  .cf7-checkbox-item {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .cf7-checkbox-container {
+    display: grid;
+    grid-template-columns: 40px 320px 320px 1fr;
+    grid-template-rows: auto 40px;
+    grid-column-gap: 24px;
+  }
+  .cf7-checkbox-title {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .cf7-checkbox {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .cf7-checkbox-field {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .cf7-select-container {
+    display: grid;
+    grid-template-columns: 40px 320px 320px 1fr;
+    grid-template-rows: 64px 3px;
+    grid-column-gap: 24px;
+  }
+  .cf7-select-title {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .cf7-select-item {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .cf7-other-container {
+    display: grid;
+    grid-template-columns: 80px 280px 320px 1fr;
+    grid-template-rows: 64px 40px;
+    grid-column-gap: 24px;
+  }
+  .cf7-other-title {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .cf7-other-item {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .cf7-message-container {
+    display: grid;
+    grid-template-columns: 40px 320px 320px 1fr;
+    grid-template-rows: auto 40px;
+    grid-column-gap: 24px;
+  }
+  .cf7-message-title {
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .cf7-message-item {
+    display: block;
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  /* 項目の背景色の設定　*/
+
+  .cf7-yourname-title,
+  .cf7-yoursex-title,
+  .cf7-yourtel-title,
+  .cf7-yourmail-title,
+  .cf7-checkbox-title,
+  .cf7-select-title,
+  .cf7-other-title,
+  .cf7-message-title {
+    background-color: rgba(184, 165, 253, 0.4);
+    border-bottom: 2px solid rgba(142, 142, 142, 0.50);
+  }
+
+  .cf7-yourname-item,
+  .cf7-yoursex-item,
+  .cf7-yourtel-item,
+  .cf7-yourmail-item,
+  .cf7-checkbox-item,
+  .cf7-select-item,
+  .cf7-other-item,
+  .cf7-message-item {
+    background-color: rgba(255, 251, 182, 0.4);
+    border-bottom: 2px solid rgba(142, 142, 142, 0.50);
+  }
+
+  /* cf7の入力フィールドのサイズの調整 */
+
+  .cf7-input-text-field {
+    width: 300px;
+    height: 32px;
+  }
+
+  .cf7-checkbox-field {
+    line-height: 48px;
+  }
+
+  .cf7-input-other-text-field {
+    width: 260px;
+    height: 32px;
+  }
+
+  /* タイトルやcf7フィールドの位置の調整 */
+  .cf7-input-text-field {
+    display: block;
+    position: relative;
+    margin-top: -9px;
+    margin-left: 8px;
+  }
+
+  .cf7-radio-field {
+    display: block;
+    position: relative;
+    margin-top: 4px;
+  }
+
+  .cf7-select-field {
+    display: block;
+    position: relative;
+    margin-top: -6px;
+    margin-left: 8px;
+  }
+
+  .cf7-input-other-text-field {
+    display: block;
+    position: relative;
+    margin-top: -9px;
+    margin-left: 8px;
+  }
+
+  .textarea-field {
+    display: block;
+    position: relative;
+    margin-left: 10px;
+  }
+
+  .cf7-yourname-title P,
+  .cf7-yoursex-title p,
+  .cf7-yourtel-title p,
+  .cf7-yourmail-title p,
+  .cf7-checkbox-title p,
+  .cf7-select-title p,
+  .cf7-other-title p,
+  .cf7-message-title p {
+    display: block;
+    position: relative;
+    margin-top: 8px;
+    padding-left: 8px;
+  }
+
+  /* フォントの調整 *//*AAA*/
+  .cf7-regtext {
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 3.4px;
+    color: #181818;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  }
+
+  .cf7-regtext-small {
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 2.0px;
+    color: #181818;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  }
+
+  .cf7-reauired {
+    font-family: "Noto Sans JP";
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 1.2px;
+    vertical-align: super;
+    color: #e61111;
+  }
+
+  /*+++ メッセージ送信ボタン +++*/
+  .cf7-submit input[type="submit"] {
+    font-family: "Noto Sans SP";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 2.0px;
+    width: 240px;
+    height: 54px;
+    margin-left: 64px;
+    margin-bottom: 24px;
+    color: #ecf4bf;
+    background-color: #3b0caa;
+    border-radius: 28px;
+  }
+  .cf7-submit input[type="submit"]:hover {
+    color: #3b0caa;
+    background-color: rgba(219, 255, 17, 0.40);
+  }
+
+  /*** cf7 ここまで ***************/
+
   /*+ ===================================== +*/
   /*+ 主記述部（inquiry）
   /** ===================================== +*/
@@ -4317,6 +5215,7 @@ main {
     padding-bottom: 8px;
   }
 
+  /*
   .career-info-inq p {
     font-size: 18px;
     line-height: 26px;
@@ -4351,6 +5250,7 @@ main {
     height: 100%;
     object-fit: contain;
   }
+  */
 
   .kosokoso-inq {
     margin: 16px 0 0 0;
